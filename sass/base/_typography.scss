@@ -1,0 +1,59 @@
+@font-face {
+  font-family: 'ME-regular';
+  src: url('../../assets/fonts/ME-regular.otf');
+}
+
+body {
+  font-family: 'Archivo', sans-serif;
+  font-weight: 400;
+  font-size: $default-font-size;
+  color: $color-grey-dark;
+}
+
+.heading-primary,
+.heading-secondary {
+  font-family: ME-regular;
+}
+
+.heading-primary {
+  backface-visibility: hidden;
+
+  line-height: 12rem;
+  font-size: 8rem;
+
+  &--white {
+    color: $color-white;
+  }
+}
+
+.bordered-area {
+  display: inline-block;
+  padding: 0rem 2rem;
+  color: $color-primary;
+  background-color: $color-secondary;
+  border-radius: 1.6rem;
+  transform: skew(-10deg);
+}
+
+.unskewed-text {
+  display: inline-block;
+  transform: skew(10deg);
+}
+
+.heading-secondary {
+  font-size: 5rem;
+  line-height: 6rem;
+  &--white {
+    color: $color-white;
+  }
+}
+
+.heading-tertiary {
+  font-size: 2.2rem;
+  color: $color-grey-light;
+  width: 65%;
+  margin: 0 auto;
+}
+
+// .paragraph {
+// }
