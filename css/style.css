@@ -10,7 +10,8 @@ body {
 }
 
 .heading-primary,
-.heading-secondary {
+.heading-secondary,
+.heading-secondary-hero {
   font-family: ME-regular;
 }
 
@@ -38,11 +39,15 @@ body {
 }
 
 .heading-secondary {
-  font-size: 5rem;
-  line-height: 6rem;
+  font-size: 4rem;
+  line-height: 5rem;
 }
 .heading-secondary--white {
   color: #fff;
+}
+.heading-secondary-hero {
+  font-size: 5rem;
+  line-height: 6rem;
 }
 
 .heading-tertiary {
@@ -50,6 +55,12 @@ body {
   color: #dddddd;
   width: 65%;
   margin: 0 auto;
+}
+
+.paragraph {
+  font-size: 2rem;
+  line-height: 170%;
+  color: #444444;
 }
 
 .u-margin-bottom-big {
@@ -153,6 +164,7 @@ body {
   justify-content: center;
   column-gap: 2rem;
   margin-top: -18rem;
+  padding-inline: 10rem;
 }
 .section-cases__card {
   width: 30rem;
@@ -166,6 +178,10 @@ body {
 }
 .section-cases__card:nth-child(even) {
   transform: translateY(2rem) rotate(-10deg);
+}
+
+.section-potential {
+  padding: 18rem 10rem 14rem;
 }
 
 .btn, .btn:link, .btn:visited {
@@ -241,6 +257,26 @@ body {
 .btn-text:active {
   transform: translateY(-1px);
   box-shadow: 0 0.5rem 1rem rgba(48, 48, 48, 0.2);
+}
+
+.star {
+  position: absolute;
+}
+.star--top-left {
+  top: -4rem;
+  left: -4rem;
+}
+.star--top-right {
+  top: 0;
+  right: 0;
+}
+.star--bottom-left {
+  bottom: 0;
+  left: 0;
+}
+.star--bottom-right {
+  bottom: 0;
+  right: 0;
 }
 
 .composition {
@@ -398,8 +434,39 @@ body {
   text-align: center;
   margin-top: -0.1rem;
   background-color: #303030;
-  padding: 12rem 0 32rem 0;
+  padding: 12rem 0 26rem 0;
   clip-path: polygon(0 0%, 100% 0, 100% 100%, 0 90%);
+}
+
+.text-content {
+  display: flex;
+  justify-content: space-between;
+  column-gap: 11.5rem;
+}
+
+.img-content {
+  display: flex;
+  justify-content: space-between;
+  column-gap: 4rem;
+  margin-top: 5rem;
+}
+.img-content > div {
+  background-color: #e5e7ec;
+  border-radius: 3rem;
+}
+
+.img-horisontal {
+  position: relative;
+  width: 55%;
+  max-height: 50rem;
+  aspect-ratio: 1.5;
+}
+
+.img-vertical {
+  width: 40%;
+  max-height: 66rem;
+  margin-top: -5rem;
+  aspect-ratio: 0.66;
 }
 
 .navigation__list {

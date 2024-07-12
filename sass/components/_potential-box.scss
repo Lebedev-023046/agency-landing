@@ -1,0 +1,31 @@
+.text-content {
+  display: flex;
+  justify-content: space-between;
+  column-gap: 11.5rem;
+}
+
+.img-content {
+  display: flex;
+  justify-content: space-between;
+  column-gap: 4rem;
+  margin-top: 5rem;
+
+  & > div {
+    background-color: $color-grey;
+    border-radius: 3rem;
+  }
+}
+
+.img-horisontal {
+  position: relative;
+  width: 55%;
+  max-height: 50rem;
+  aspect-ratio: 1.5;
+}
+
+.img-vertical {
+  width: 40%;
+  max-height: 66rem;
+  margin-top: -5rem;
+  aspect-ratio: 0.66;
+}

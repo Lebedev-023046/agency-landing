@@ -11,7 +11,8 @@ body {
 }
 
 .heading-primary,
-.heading-secondary {
+.heading-secondary,
+.heading-secondary-hero {
   font-family: ME-regular;
 }
 
@@ -41,10 +42,15 @@ body {
 }
 
 .heading-secondary {
-  font-size: 5rem;
-  line-height: 6rem;
+  font-size: 4rem;
+  line-height: 5rem;
   &--white {
     color: $color-white;
+  }
+
+  &-hero {
+    font-size: 5rem;
+    line-height: 6rem;
   }
 }
 
@@ -55,5 +61,8 @@ body {
   margin: 0 auto;
 }
 
-// .paragraph {
-// }
+.paragraph {
+  font-size: 2rem;
+  line-height: 170%;
+  color: $color-grey-dark;
+}

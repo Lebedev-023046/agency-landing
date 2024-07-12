@@ -3,6 +3,7 @@
   justify-content: center;
   column-gap: 2rem;
   margin-top: -18rem;
+  padding-inline: 10rem;
 
   &__card {
     width: 30rem;
@@ -19,6 +20,10 @@
       transform: translateY(2rem) rotate(-10deg);
     }
   }
+}
+
+.section-potential {
+  padding: 18rem 10rem 14rem;
 }
 
 // .section-features {
