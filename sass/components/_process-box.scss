@@ -1,0 +1,36 @@
+.section-process-heading-content {
+  position: relative;
+  text-align: center;
+  margin: 16rem;
+  max-width: 50%;
+  margin: 16rem auto;
+}
+
+.process-cards {
+  position: absolute;
+  // top: -10rem;
+  display: grid;
+  gap: 1.6rem;
+  margin-inline: 11.5rem;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.process-card {
+  background-color: $color-card;
+  padding: 4.7rem;
+  border-radius: 5rem;
+
+  .number {
+    font-family: ME-regular;
+    font-size: 3rem;
+    color: $color-card-number;
+  }
+
+  .img-block {
+    width: 100%;
+    height: 30rem;
+    border-radius: 3rem;
+    background-color: $color-grey;
+    margin-block: 4rem;
+  }
+}

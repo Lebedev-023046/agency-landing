@@ -12,7 +12,8 @@ body {
 
 .heading-primary,
 .heading-secondary,
-.heading-secondary-hero {
+.heading-secondary-hero,
+.heading-tertiary {
   font-family: ME-regular;
 }
 
@@ -59,14 +60,27 @@ body {
 }
 
 .heading-tertiary {
-  font-size: 2.2rem;
-  color: $color-grey-light;
-  width: 65%;
-  margin: 0 auto;
+  font-size: 2.3rem;
+
+  &--white {
+    color: $color-white;
+  }
+
+  &-hero {
+    width: 65%;
+    margin: 0 auto;
+    color: $color-grey-light;
+    font-family: 'Archivo', sans-serif;
+  }
 }
 
 .paragraph {
   font-size: 2rem;
   line-height: 170%;
   color: $color-grey-dark;
+  color: inherit;
+
+  &--white {
+    color: $color-white;
+  }
 }

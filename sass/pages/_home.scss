@@ -27,6 +27,34 @@
   padding: 18rem 10rem 14rem;
 }
 
+.section-services {
+  position: relative;
+  padding: 0rem 10rem 17rem;
+}
+
+.section-process {
+  background-color: $color-primary;
+  height: 210%;
+  transform: skewY(-5deg);
+  border-top: 10px solid $color-secondary;
+
+  &-content {
+    position: relative;
+    transform: skewY(5deg);
+  }
+}
+
+.section-projects {
+  padding: 24rem 0 6.5rem;
+
+  &-content {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    padding-inline: 10rem;
+  }
+}
+
 // .section-features {
 //   padding: 20rem 0;
 //   background-image: linear-gradient(
