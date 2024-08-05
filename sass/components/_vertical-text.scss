@@ -1,0 +1,18 @@
+.vertical-text {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: inline-block;
+  padding: 1.5rem 2.3rem;
+  color: $color-white;
+  background-color: $color-black-shade;
+  writing-mode: vertical-rl;
+  text-transform: uppercase;
+  white-space: nowrap;
+  transform: rotate(180deg);
+
+  &--secondary {
+    color: inherit;
+    background-color: $color-secondary;
+  }
+}

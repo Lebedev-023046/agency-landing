@@ -1,9 +1,16 @@
 .star {
   position: absolute;
 
+  &-secondary {
+    &--top-left {
+      top: -4rem;
+      left: -4rem;
+    }
+  }
+
   &--top-left {
-    top: -4rem;
-    left: -4rem;
+    top: -2rem;
+    left: -20%;
   }
   &--top-right {
     top: 0;
@@ -14,7 +21,7 @@
     left: 0;
   }
   &--bottom-right {
-    bottom: 0;
-    right: 0;
+    bottom: -2rem;
+    right: -20%;
   }
 }
