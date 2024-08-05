@@ -6,11 +6,12 @@
   padding-inline: 10rem;
 
   &__card {
+    position: relative;
     width: 30rem;
     aspect-ratio: 1/1;
     border: 10px solid $color-white;
     border-radius: 3rem;
-    background-color: $color-grey;
+    overflow: hidden;
 
     &:nth-child(odd) {
       transform: translateY(-2rem) rotate(10deg);

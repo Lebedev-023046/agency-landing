@@ -23,6 +23,9 @@ body {
 .heading-primary--white {
   color: #fff;
 }
+.heading-primary--black {
+  color: #303030;
+}
 
 .bordered-area {
   display: inline-block;
@@ -167,11 +170,12 @@ body {
   padding-inline: 10rem;
 }
 .section-cases__card {
+  position: relative;
   width: 30rem;
   aspect-ratio: 1/1;
   border: 10px solid #fff;
   border-radius: 3rem;
-  background-color: #e5e7ec;
+  overflow: hidden;
 }
 .section-cases__card:nth-child(odd) {
   transform: translateY(-2rem) rotate(10deg);
@@ -469,6 +473,70 @@ body {
   aspect-ratio: 0.66;
 }
 
+.section-values {
+  padding: 0 4rem 8rem;
+}
+.section-values-header {
+  display: flex;
+  justify-content: center;
+  column-gap: 2rem;
+}
+.section-values-star {
+  max-width: 4rem;
+}
+.section-values-decoration {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 5rem auto;
+}
+.section-values-decoration > img {
+  padding: 0 2.3rem;
+}
+.section-values-decoration::after, .section-values-decoration::before {
+  content: "";
+  display: block;
+  text-align: center;
+  height: 4px;
+  width: 50%;
+  background-color: #303030;
+}
+.section-values-image-block {
+  width: 100%;
+  height: 28rem;
+  background-color: #e5e7ec;
+  border-radius: 2.3rem;
+}
+.section-values-content-block {
+  margin-top: 4rem;
+}
+.section-values-paragraph {
+  width: 70%;
+  margin: 0 auto;
+  text-align: center;
+  padding-bottom: 2.3rem;
+}
+.section-values-btns {
+  display: flex;
+  justify-content: center;
+  column-gap: 2rem;
+  text-align: center;
+  width: 40%;
+  margin: 0 auto;
+  height: 100%;
+}
+.section-values-btn {
+  display: block;
+  border-radius: 4rem;
+  padding: 2.3rem;
+  border: 1px solid #222222;
+  width: 100%;
+}
+.section-values-btn--active {
+  color: #fff;
+  background-color: #222222;
+}
+
 .navigation__list {
   display: flex;
   column-gap: 4rem;
@@ -476,6 +544,10 @@ body {
 .navigation__item {
   color: #fff;
   font-size: 1.8rem;
+  transition: 0.15s ease-in-out;
+}
+.navigation__item:hover {
+  color: #9dff50;
 }
 
 .header {
@@ -492,9 +564,10 @@ body {
   width: 100%;
 }
 .header__btn {
-  color: #fff;
+  color: #222222;
   background-color: #9dff50;
-  padding: 2rem 3.2rem;
+  font-size: 1.6rem;
+  padding: 1.5rem 2rem;
   border-radius: 3rem;
 }
 

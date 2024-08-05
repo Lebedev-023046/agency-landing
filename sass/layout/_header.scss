@@ -14,9 +14,10 @@
   }
 
   &__btn {
-    color: $color-white;
+    color: $color-primary;
     background-color: $color-secondary;
-    padding: 2rem 3.2rem;
+    font-size: 1.6rem;
+    padding: 1.5rem 2rem;
     border-radius: 3rem;
   }
 }

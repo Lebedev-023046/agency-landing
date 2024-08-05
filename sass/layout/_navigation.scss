@@ -7,5 +7,9 @@
   &__item {
     color: $color-white;
     font-size: 1.8rem;
+    transition: 0.15s ease-in-out;
+    &:hover {
+      color: $color-secondary;
+    }
   }
 }

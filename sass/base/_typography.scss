@@ -25,6 +25,10 @@ body {
   &--white {
     color: $color-white;
   }
+
+  &--black {
+    color: $color-black;
+  }
 }
 
 .bordered-area {
