@@ -1,14 +1,27 @@
 .section-process-heading-content {
-  position: relative;
   text-align: center;
-  margin: 16rem;
-  max-width: 50%;
-  margin: 16rem auto;
+  max-width: 80%;
+  margin: 14rem auto 8rem;
+
+  .section-info {
+    width: 70%;
+  }
+
+  .star-content {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .star-left {
+    align-self: flex-start;
+  }
+
+  .star-right {
+    align-self: flex-end;
+  }
 }
 
 .process-cards {
-  position: absolute;
-  // top: -10rem;
   display: grid;
   gap: 1.6rem;
   margin-inline: 11.5rem;

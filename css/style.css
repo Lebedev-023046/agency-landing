@@ -222,18 +222,16 @@ body {
 }
 
 .section-process {
-  background-color: #222222;
-  height: 210%;
   transform: skewY(-5deg);
   border-top: 10px solid #9dff50;
+  background-image: linear-gradient(#222222 0%, #222222 95%, transparent 50%);
 }
 .section-process-content {
-  position: relative;
   transform: skewY(5deg);
 }
 
 .section-projects {
-  padding: 24rem 0 6.5rem;
+  padding: 10rem 0 6.5rem;
 }
 .section-projects-content {
   position: relative;
@@ -272,6 +270,11 @@ body {
   padding: 2rem 3rem;
   margin-top: auto;
   border: 1px solid #222222;
+  transition: 0.15s ease-in-out;
+}
+.btn-projects:hover {
+  background-color: #222222;
+  color: #fff;
 }
 .btn-arrow {
   width: 5rem;
@@ -308,6 +311,46 @@ body {
 .star--bottom-right {
   bottom: -2rem;
   right: -20%;
+}
+
+.feedback-card {
+  border-radius: 3rem;
+  padding: 2.3rem 4rem;
+  background-color: #2a2a2a;
+  color: #fff;
+  max-width: 65rem;
+  width: 100%;
+}
+.feedback-card .card-header {
+  display: flex;
+  align-items: center;
+  column-gap: 1.6rem;
+  margin-bottom: 4rem;
+}
+.feedback-card .card-header .avatar {
+  height: 6rem;
+  aspect-ratio: 1;
+  background-color: #e5e7ec;
+  border-radius: 50%;
+}
+.feedback-card .card-header .user-info {
+  display: flex;
+  flex-direction: column;
+}
+.feedback-card .card-header .user-info .name {
+  font-size: 2.1rem;
+  font-weight: 500;
+}
+.feedback-card .card-header .user-info .about {
+  font-size: 1.8rem;
+  color: #dddddd;
+}
+.feedback-card .card-header .decoration {
+  height: 5rem;
+  width: 5rem;
+  margin-left: auto;
+  align-self: flex-start;
+  background: url("../../assets/img/quoteup.svg") no-repeat center center;
 }
 
 .story {
@@ -425,7 +468,7 @@ body {
 }
 
 .section-values {
-  padding: 0 4rem 8rem;
+  padding: 10rem 4rem 8rem;
 }
 .section-values-header {
   display: flex;
@@ -600,15 +643,25 @@ body {
 }
 
 .section-process-heading-content {
-  position: relative;
   text-align: center;
-  margin: 16rem;
-  max-width: 50%;
-  margin: 16rem auto;
+  max-width: 80%;
+  margin: 14rem auto 8rem;
+}
+.section-process-heading-content .section-info {
+  width: 70%;
+}
+.section-process-heading-content .star-content {
+  display: flex;
+  justify-content: space-between;
+}
+.section-process-heading-content .star-left {
+  align-self: flex-start;
+}
+.section-process-heading-content .star-right {
+  align-self: flex-end;
 }
 
 .process-cards {
-  position: absolute;
   display: grid;
   gap: 1.6rem;
   margin-inline: 11.5rem;
@@ -690,6 +743,62 @@ body {
   margin: 0 auto;
   margin-top: 1rem;
   color: #666666;
+}
+
+.section-feedback {
+  background-color: #222222;
+  border-bottom: 10px solid #9dff50;
+  transform: skewY(-5deg);
+  padding: 14rem 0 8rem;
+}
+.section-feedback .content {
+  transform: skewY(5deg);
+}
+.section-feedback .heading-content {
+  text-align: center;
+  max-width: 80%;
+  margin: 0 auto;
+}
+.section-feedback .section-info {
+  width: 70%;
+}
+.section-feedback .paragraph-feedback {
+  color: #aaa;
+}
+.section-feedback .star-content {
+  display: flex;
+  justify-content: space-between;
+}
+.section-feedback .star-left {
+  align-self: flex-end;
+}
+.section-feedback .star-right {
+  align-self: flex-start;
+}
+.section-feedback .slider {
+  margin-top: 6rem;
+}
+.section-feedback .slider-cards {
+  display: flex;
+  justify-content: center;
+  column-gap: 3rem;
+  margin: 0 auto;
+}
+.section-feedback .controls {
+  display: flex;
+  justify-content: center;
+  column-gap: 1.6rem;
+  margin-top: 4rem;
+}
+.section-feedback .controls > button {
+  height: 5rem;
+  aspect-ratio: 1;
+  border-radius: 50%;
+  border: 1px solid #fff;
+  background: url("../../assets/img/arroy-right-white.svg") no-repeat center;
+}
+.section-feedback .controls .go-left {
+  transform: rotate(180deg);
 }
 
 .navigation__list {
