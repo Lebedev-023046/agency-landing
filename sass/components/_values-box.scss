@@ -35,8 +35,45 @@
   &-image-block {
     width: 100%;
     height: 28rem;
-    background-color: $color-grey;
+    color: $color-white;
     border-radius: 2.3rem;
+    background-size: contain;
+    background: url('../../assets/img/values/ornament.png') $color-primary;
+
+    .content-block {
+      width: 40%;
+      margin: 0 auto;
+
+      .title {
+        font-size: 1.6rem;
+        padding: 3rem 0 2rem;
+        color: #f1f1ef;
+      }
+
+      .price {
+        font-size: 4rem;
+        font-weight: 600;
+        color: #f1f1ef;
+        margin-bottom: 1rem;
+      }
+
+      .info {
+        position: relative;
+        font-size: 1.6rem;
+
+        &:before {
+          display: inline-block;
+          content: url('../../assets/img/chart-secondary.svg');
+          height: 100%;
+          width: 3rem;
+          text-align: center;
+          margin-right: 0.5rem;
+          padding: 6px 6px 2px;
+          border-radius: 3rem;
+          background-color: #213511;
+        }
+      }
+    }
   }
 
   &-content-block {

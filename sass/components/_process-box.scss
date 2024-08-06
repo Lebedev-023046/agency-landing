@@ -43,7 +43,22 @@
     width: 100%;
     height: 30rem;
     border-radius: 3rem;
-    background-color: $color-grey;
     margin-block: 4rem;
+  }
+
+  .discovery {
+    background: url('../../assets/img/processes/discovery.png') no-repeat;
+  }
+
+  .strategy {
+    background: url('../../assets/img/processes/strategy.png') no-repeat;
+  }
+
+  .advertisement {
+    background: url('../../assets/img/processes/advertisement.png') no-repeat;
+  }
+
+  .testing {
+    background: url('../../assets/img/processes/testing.png') no-repeat;
   }
 }
