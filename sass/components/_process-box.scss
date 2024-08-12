@@ -3,13 +3,28 @@
   max-width: 80%;
   margin: 14rem auto 8rem;
 
+  @include respond(phone) {
+    margin: 7rem auto 4rem;
+  }
+
   .section-info {
     width: 70%;
+
+    @include respond(phone) {
+      max-width: 90%;
+    }
   }
 
   .star-content {
     display: flex;
     justify-content: space-between;
+  }
+
+  .star-left,
+  .star-right {
+    @include respond(phone) {
+      max-width: 4rem;
+    }
   }
 
   .star-left {
@@ -26,6 +41,11 @@
   gap: 1.6rem;
   margin-inline: 11.5rem;
   grid-template-columns: repeat(2, 1fr);
+
+  @include respond(phone) {
+    margin-inline: 2rem;
+    grid-template-columns: repeat(1, 1fr);
+  }
 }
 
 .process-card {
