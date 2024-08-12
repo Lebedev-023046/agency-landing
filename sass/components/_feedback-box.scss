@@ -4,6 +4,10 @@
   transform: skewY(-5deg);
   padding: 14rem 0 8rem;
 
+  @include respond(phone) {
+    padding: 7rem 0 4rem;
+  }
+
   .content {
     transform: skewY(5deg);
   }
@@ -12,10 +16,18 @@
     text-align: center;
     max-width: 80%;
     margin: 0 auto;
+
+    @include respond(phone) {
+      max-width: 90%;
+    }
   }
 
   .section-info {
     width: 70%;
+
+    @include respond(phone) {
+      width: 80%;
+    }
   }
 
   .paragraph-feedback {
@@ -25,6 +37,11 @@
   .star-content {
     display: flex;
     justify-content: space-between;
+  }
+
+  .star-left,
+  .star-right {
+    max-width: 4rem;
   }
 
   .star-left {
@@ -37,6 +54,10 @@
 
   .slider {
     margin-top: 6rem;
+
+    @include respond(phone) {
+      padding: 0 2rem;
+    }
   }
 
   .slider-cards {
