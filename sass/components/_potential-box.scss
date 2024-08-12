@@ -2,6 +2,11 @@
   display: flex;
   justify-content: space-between;
   column-gap: 11.5rem;
+
+  @include respond(phone) {
+    flex-direction: column;
+    row-gap: 2rem;
+  }
 }
 
 .img-content {
@@ -9,12 +14,19 @@
   justify-content: space-between;
   column-gap: 4rem;
   margin-top: 5rem;
-  // overflow: hidden;
+
+  @include respond(phone) {
+    flex-direction: column;
+    row-gap: 2rem;
+  }
 
   & > div {
     // background-color: $color-grey;
     border-radius: 3rem;
     background-size: cover;
+    @include respond(phone) {
+      width: 100%;
+    }
   }
 }
 
@@ -33,4 +45,9 @@
   margin-top: -5rem;
   aspect-ratio: 0.66;
   background: url('../../assets/img/potential/vertical.png') no-repeat center;
+
+  @include respond(phone) {
+    flex-direction: column;
+    margin: 0;
+  }
 }

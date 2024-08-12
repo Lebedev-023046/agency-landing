@@ -1,5 +1,9 @@
 .section-potential {
-  padding: 18rem 10rem 14rem;
+  padding: 8rem 10rem 14rem;
+
+  @include respond(phone) {
+    padding: 0rem 2rem 14rem;
+  }
 }
 
 .section-services {

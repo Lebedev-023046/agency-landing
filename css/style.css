@@ -104,6 +104,11 @@ body {
 .paragraph--white {
   color: #fff;
 }
+@media (max-width: 37.5em) {
+  .paragraph {
+    font-size: 1.5rem;
+  }
+}
 
 .u-width-50 {
   width: 50%;
@@ -219,7 +224,12 @@ body {
 }
 
 .section-potential {
-  padding: 18rem 10rem 14rem;
+  padding: 8rem 10rem 14rem;
+}
+@media (max-width: 37.5em) {
+  .section-potential {
+    padding: 0rem 2rem 14rem;
+  }
 }
 
 .section-services {
@@ -493,6 +503,12 @@ body {
   justify-content: space-between;
   column-gap: 11.5rem;
 }
+@media (max-width: 37.5em) {
+  .text-content {
+    flex-direction: column;
+    row-gap: 2rem;
+  }
+}
 
 .img-content {
   display: flex;
@@ -500,9 +516,20 @@ body {
   column-gap: 4rem;
   margin-top: 5rem;
 }
+@media (max-width: 37.5em) {
+  .img-content {
+    flex-direction: column;
+    row-gap: 2rem;
+  }
+}
 .img-content > div {
   border-radius: 3rem;
   background-size: cover;
+}
+@media (max-width: 37.5em) {
+  .img-content > div {
+    width: 100%;
+  }
 }
 
 .img-horisontal {
@@ -519,6 +546,12 @@ body {
   margin-top: -5rem;
   aspect-ratio: 0.66;
   background: url("../../assets/img/potential/vertical.png") no-repeat center;
+}
+@media (max-width: 37.5em) {
+  .img-vertical {
+    flex-direction: column;
+    margin: 0;
+  }
 }
 
 .section-values {
