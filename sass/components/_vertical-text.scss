@@ -11,6 +11,10 @@
   white-space: nowrap;
   transform: rotate(180deg);
 
+  @include respond(phone) {
+    display: none;
+  }
+
   &--secondary {
     color: inherit;
     background-color: $color-secondary;

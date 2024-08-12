@@ -2,13 +2,17 @@
   padding: 8rem 10rem 14rem;
 
   @include respond(phone) {
-    padding: 0rem 2rem 14rem;
+    padding: 0rem 2rem 9rem;
   }
 }
 
 .section-services {
   position: relative;
   padding: 0rem 10rem 17rem;
+
+  @include respond(phone) {
+    padding: 0rem 2rem 4rem;
+  }
 }
 
 .section-process {
