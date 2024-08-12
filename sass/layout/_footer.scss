@@ -3,9 +3,17 @@
   background-color: $color-primary;
   padding: 6rem 10rem 3rem;
 
+  @include respond(phone) {
+    padding: 8rem 5.5rem;
+  }
+
   .content {
     align-items: center;
     margin-bottom: 12rem;
+
+    @include respond(phone) {
+      margin-bottom: 4rem;
+    }
   }
 
   .top-content {
@@ -14,9 +22,17 @@
     column-gap: 3rem;
     margin-bottom: 2rem;
 
+    @include respond(phone) {
+      column-gap: 1.5rem;
+    }
+
     .logo {
       max-width: 15rem;
       width: 100%;
+
+      @include respond(phone) {
+        max-width: 4rem;
+      }
     }
   }
 
@@ -28,11 +44,21 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+
+    @include respond(phone) {
+      flex-direction: column;
+      row-gap: 4rem;
+    }
+  }
+
+  .copyright {
+    @include respond(phone) {
+      order: 1;
+    }
   }
 
   .social-medias {
     display: flex;
-
     column-gap: 1.6rem;
   }
 
