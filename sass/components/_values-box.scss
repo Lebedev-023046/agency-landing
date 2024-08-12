@@ -1,10 +1,20 @@
 .section-values {
   padding: 10rem 4rem 8rem;
 
+  @include respond(phone) {
+    padding: 5rem 2rem 4rem;
+  }
+
   &-header {
     display: flex;
+    align-items: center;
     justify-content: center;
     column-gap: 2rem;
+
+    @include respond(phone) {
+      flex-direction: column;
+      row-gap: 1rem;
+    }
   }
 
   &-star {
@@ -37,8 +47,11 @@
     height: 28rem;
     color: $color-white;
     border-radius: 2.3rem;
-    background-size: contain;
-    background: url('../../assets/img/values/ornament.png') $color-primary;
+    background-image: url('../../assets/img/values/ornament.png');
+    background-color: $color-primary;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
 
     .content-block {
       width: 40%;
@@ -85,6 +98,10 @@
     margin: 0 auto;
     text-align: center;
     padding-bottom: 2.3rem;
+
+    @include respond(phone) {
+      width: 90%;
+    }
   }
 
   &-btns {
@@ -92,7 +109,7 @@
     justify-content: center;
     column-gap: 2rem;
     text-align: center;
-    width: 40%;
+    min-width: 40%;
     margin: 0 auto;
     height: 100%;
   }

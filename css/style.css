@@ -579,10 +579,22 @@ body {
 .section-values {
   padding: 10rem 4rem 8rem;
 }
+@media (max-width: 37.5em) {
+  .section-values {
+    padding: 5rem 2rem 4rem;
+  }
+}
 .section-values-header {
   display: flex;
+  align-items: center;
   justify-content: center;
   column-gap: 2rem;
+}
+@media (max-width: 37.5em) {
+  .section-values-header {
+    flex-direction: column;
+    row-gap: 1rem;
+  }
 }
 .section-values-star {
   max-width: 4rem;
@@ -609,8 +621,11 @@ body {
   height: 28rem;
   color: #fff;
   border-radius: 2.3rem;
-  background-size: contain;
-  background: url("../../assets/img/values/ornament.png") #222222;
+  background-image: url("../../assets/img/values/ornament.png");
+  background-color: #222222;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 .section-values-image-block .content-block {
   width: 40%;
@@ -651,12 +666,17 @@ body {
   text-align: center;
   padding-bottom: 2.3rem;
 }
+@media (max-width: 37.5em) {
+  .section-values-paragraph {
+    width: 90%;
+  }
+}
 .section-values-btns {
   display: flex;
   justify-content: center;
   column-gap: 2rem;
   text-align: center;
-  width: 40%;
+  min-width: 40%;
   margin: 0 auto;
   height: 100%;
 }
