@@ -8,7 +8,7 @@
   background-image: linear-gradient(
     175deg,
     #222222 0%,
-    #222222 80%,
+    #222222 75%,
     transparent 50%
   );
 
@@ -17,15 +17,25 @@
   }
 
   .cases {
-    display: flex;
+    display: grid;
     justify-content: center;
-    column-gap: 2rem;
-    // margin-top: -18rem;
-    padding-inline: 10rem;
+    grid-template-columns: repeat(4, minmax(20%, min(20%, 28rem)));
+    gap: 2rem;
+
+    padding: 16rem 0 10rem;
+
+    @include respond(phone) {
+      padding: 10rem 0 0;
+      gap: 0;
+    }
+
+    @include respond(phone) {
+      grid-template-columns: repeat(2, 20rem);
+    }
 
     &__card {
       position: relative;
-      width: 30rem;
+      max-width: 30rem;
       aspect-ratio: 1/1;
       border: 10px solid $color-white;
       border-radius: 3rem;
@@ -33,10 +43,18 @@
 
       &:nth-child(odd) {
         transform: translateY(-2rem) rotate(10deg);
+
+        @include respond(phone) {
+          transform: translate(1rem, -2rem) rotate(10deg);
+        }
       }
 
       &:nth-child(even) {
         transform: translateY(2rem) rotate(-10deg);
+
+        @include respond(phone) {
+          transform: translate(-1rem, 2rem) rotate(-10deg);
+        }
       }
     }
   }
