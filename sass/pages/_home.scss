@@ -1,28 +1,3 @@
-.section-cases {
-  display: flex;
-  justify-content: center;
-  column-gap: 2rem;
-  margin-top: -18rem;
-  padding-inline: 10rem;
-
-  &__card {
-    position: relative;
-    width: 30rem;
-    aspect-ratio: 1/1;
-    border: 10px solid $color-white;
-    border-radius: 3rem;
-    overflow: hidden;
-
-    &:nth-child(odd) {
-      transform: translateY(-2rem) rotate(10deg);
-    }
-
-    &:nth-child(even) {
-      transform: translateY(2rem) rotate(-10deg);
-    }
-  }
-}
-
 .section-potential {
   padding: 18rem 10rem 14rem;
 }

@@ -23,8 +23,8 @@ body {
 }
 @media (max-width: 37.5em) {
   .heading-primary {
-    line-height: 3rem;
-    font-size: 2.3rem;
+    line-height: 120%;
+    font-size: 4rem;
   }
 }
 .heading-primary--white {
@@ -52,6 +52,12 @@ body {
   font-size: 4rem;
   line-height: 5rem;
 }
+@media (max-width: 37.5em) {
+  .heading-secondary {
+    line-height: 120%;
+    font-size: 2.7rem;
+  }
+}
 .heading-secondary--white {
   color: #fff;
 }
@@ -59,13 +65,19 @@ body {
   font-size: 5rem;
   line-height: 6rem;
 }
+@media (max-width: 37.5em) {
+  .heading-secondary-hero {
+    line-height: 120%;
+    font-size: 2.7rem;
+  }
+}
 
 .heading-tertiary {
   font-size: 2.3rem;
 }
 @media (max-width: 37.5em) {
   .heading-tertiary {
-    font-size: 1.1rem;
+    font-size: 1.5rem;
   }
 }
 .heading-tertiary--white {
@@ -76,6 +88,11 @@ body {
   margin: 0 auto;
   color: #dddddd;
   font-family: "Archivo", sans-serif;
+}
+@media (max-width: 37.5em) {
+  .heading-tertiary-hero {
+    width: 85%;
+  }
 }
 
 .paragraph {
@@ -199,28 +216,6 @@ html {
 
 body {
   box-sizing: border-box;
-}
-
-.section-cases {
-  display: flex;
-  justify-content: center;
-  column-gap: 2rem;
-  margin-top: -18rem;
-  padding-inline: 10rem;
-}
-.section-cases__card {
-  position: relative;
-  width: 30rem;
-  aspect-ratio: 1/1;
-  border: 10px solid #fff;
-  border-radius: 3rem;
-  overflow: hidden;
-}
-.section-cases__card:nth-child(odd) {
-  transform: translateY(-2rem) rotate(10deg);
-}
-.section-cases__card:nth-child(even) {
-  transform: translateY(2rem) rotate(-10deg);
 }
 
 .section-potential {
@@ -442,9 +437,33 @@ body {
 .hero {
   text-align: center;
   margin-top: -0.1rem;
-  background-color: #010101;
-  padding: 12rem 0 26rem 0;
-  clip-path: polygon(0 0%, 100% 0, 100% 100%, 0 90%);
+  padding-top: 12rem;
+  background-image: linear-gradient(175deg, #222222 0%, #222222 80%, transparent 50%);
+}
+@media (max-width: 37.5em) {
+  .hero {
+    padding: 5.5rem 0 10rem 0;
+  }
+}
+.hero .cases {
+  display: flex;
+  justify-content: center;
+  column-gap: 2rem;
+  padding-inline: 10rem;
+}
+.hero .cases__card {
+  position: relative;
+  width: 30rem;
+  aspect-ratio: 1/1;
+  border: 10px solid #fff;
+  border-radius: 3rem;
+  overflow: hidden;
+}
+.hero .cases__card:nth-child(odd) {
+  transform: translateY(-2rem) rotate(10deg);
+}
+.hero .cases__card:nth-child(even) {
+  transform: translateY(2rem) rotate(-10deg);
 }
 
 .text-content {
