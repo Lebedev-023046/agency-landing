@@ -4,6 +4,10 @@
 
 .u-width-50 {
   width: 50%;
+
+  @include respond(phone) {
+    width: 100%;
+  }
 }
 
 .u-width-10 {

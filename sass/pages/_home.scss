@@ -30,11 +30,21 @@
 .section-projects {
   padding: 10rem 0 6.5rem;
 
+  @include respond(phone) {
+    padding: 5rem 0 3rem;
+  }
+
   &-content {
     position: relative;
     display: flex;
     justify-content: space-between;
-    padding-inline: 10rem;
+    padding: 0 10rem;
+
+    @include respond(phone) {
+      flex-direction: column;
+      padding: 0 2rem;
+      gap: 3rem;
+    }
   }
 }
 
