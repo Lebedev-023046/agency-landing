@@ -885,26 +885,9 @@ body {
   transform: rotate(180deg);
 }
 
-.navigation .burger {
-  display: none;
-  width: 5rem;
-  aspect-ratio: 1;
-  border-radius: 50%;
-  background: url("../../assets/img/burger.svg") #2a2a2a no-repeat center;
-}
-@media (max-width: 37.5em) {
-  .navigation .burger {
-    display: block;
-  }
-}
 .navigation__list {
   display: flex;
   column-gap: 4rem;
-}
-@media (max-width: 37.5em) {
-  .navigation__list {
-    display: none;
-  }
 }
 .navigation__item {
   color: #fff;
@@ -922,18 +905,8 @@ body {
   padding: 3rem 5rem;
   background-color: #010101;
 }
-@media (max-width: 37.5em) {
-  .header {
-    padding: 2rem;
-  }
-}
 .header__logo-box {
   width: 10rem;
-}
-@media (max-width: 37.5em) {
-  .header__logo-box {
-    max-width: 7.5rem;
-  }
 }
 .header__logo {
   width: 100%;
@@ -944,11 +917,6 @@ body {
   font-size: 1.6rem;
   padding: 1.5rem 2rem;
   border-radius: 3rem;
-}
-@media (max-width: 37.5em) {
-  .header__btn {
-    display: none;
-  }
 }
 
 .footer {
@@ -1000,4 +968,4 @@ body {
   background: #333 url("../../assets/img/socials/ball.svg") no-repeat center;
 }
 
-/*# sourceMappingURL=style.css.map */
+/*# sourceMappingURL=style.comp.css.map */

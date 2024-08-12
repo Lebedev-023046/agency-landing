@@ -1,7 +1,22 @@
 .navigation {
+  .burger {
+    display: none;
+    width: 5rem;
+    aspect-ratio: 1;
+    border-radius: 50%;
+    background: url('../../assets/img/burger.svg') #2a2a2a no-repeat center;
+    @include respond(phone) {
+      display: block;
+    }
+  }
+
   &__list {
     display: flex;
     column-gap: 4rem;
+
+    @include respond(phone) {
+      display: none;
+    }
   }
 
   &__item {
