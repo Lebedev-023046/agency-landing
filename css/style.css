@@ -243,6 +243,11 @@ body {
 .section-potential {
   padding: 8rem 10rem 14rem;
 }
+@media (max-width: 75em) {
+  .section-potential {
+    padding: 4rem 5rem 7rem;
+  }
+}
 @media (max-width: 37.5em) {
   .section-potential {
     padding: 0rem 2rem 9rem;
@@ -349,8 +354,9 @@ body {
 }
 @media (max-width: 75em) {
   .star-secondary--top-left {
-    top: -8%;
-    left: -8%;
+    top: -7%;
+    left: -6%;
+    max-width: 8rem;
   }
 }
 @media (max-width: 56.25em) {

@@ -7,8 +7,9 @@
       left: -4rem;
 
       @include respond(tab-land) {
-        top: -8%;
-        left: -8%;
+        top: -7%;
+        left: -6%;
+        max-width: 8rem;
       }
 
       @include respond(tab-port) {
