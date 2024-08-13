@@ -20,26 +20,39 @@
         <div class="header__logo-box">
           <img src="./assets/img/logo.svg" alt="logo" class="header__logo" />
         </div>
-        <nav class="navigation">
-          <div class="burger"></div>
-          <ul class="navigation__list">
-            <li class="navigation__item">
-              <a href="#" class="navigation__link">Home</a>
-            </li>
-            <li class="navigation__item">
-              <a href="#" class="navigation__link">Services</a>
-            </li>
-            <li class="navigation__item">
-              <a href="#" class="navigation__link">Portfolio</a>
-            </li>
-            <li class="navigation__item">
-              <a href="#" class="navigation__link">Pricing</a>
-            </li>
-            <li class="navigation__item">
-              <a href="#" class="navigation__link">About</a>
-            </li>
-          </ul>
-        </nav>
+        <div class="navigation-container">
+          <nav class="navigation">
+            <input
+              type="checkbox"
+              class="navigation__checkbox"
+              id="navi-toggle"
+            />
+            <label for="navi-toggle" class="navigation__button">
+              <span class="burger">&nbsp;</span>
+              <div class="navigation__background"></div>
+              <!-- <span class="navigation__icon">&nbsp;</span> -->
+            </label>
+
+            <ul class="navigation__list">
+              <li class="navigation__item">
+                <a href="#" class="navigation__link">Home</a>
+              </li>
+              <li class="navigation__item">
+                <a href="#" class="navigation__link">Services</a>
+              </li>
+              <li class="navigation__item">
+                <a href="#" class="navigation__link">Portfolio</a>
+              </li>
+              <li class="navigation__item">
+                <a href="#" class="navigation__link">Pricing</a>
+              </li>
+              <li class="navigation__item">
+                <a href="#" class="navigation__link">About</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+
         <button class="header__btn contact-us">Contact Us</button>
       </header>
       <main class="main">
@@ -102,7 +115,7 @@
             <div class="img-vertical"></div>
           </div>
         </section>
-        <section class="section-services">
+        <!-- <section class="section-services">
           <div class="vertical-text vertical-text--secondary">what we do</div>
           <h2 class="heading-secondary">
             Our
@@ -188,8 +201,8 @@
               </div>
             </div>
           </div>
-        </section>
-        <section class="section-process">
+        </section> -->
+        <!-- <section class="section-process">
           <div class="section-process-content">
             <div class="section-process-heading-content">
               <div class="vertical-text">see how it works</div>
@@ -269,8 +282,8 @@
               </div>
             </div>
           </div>
-        </section>
-        <section class="section-projects">
+        </section> -->
+        <!-- <section class="section-projects">
           <div class="section-projects-content">
             <div class="vertical-text vertical-text--secondary">portfolio</div>
             <h2 class="heading-secondary u-width-50">
@@ -311,9 +324,9 @@
               deep understanding of their needs.
             </p>
           </div>
-        </section>
+        </section> -->
 
-        <section class="section-feedback">
+        <!-- <section class="section-feedback">
           <div class="content">
             <div class="vertical-text">Testimonials</div>
             <div class="heading-content">
@@ -379,7 +392,7 @@
                     advertising that exceeded our expectations. We couldn't be
                     happier with the final result!
                   </p>
-                </div> -->
+                </div>
                 <div class="feedback-card">
                   <div class="card-header">
                     <div class="avatar"></div>
@@ -403,9 +416,9 @@
               </div>
             </div>
           </div>
-        </section>
+        </section> -->
 
-        <section class="section-values">
+        <!-- <section class="section-values">
           <div class="section-values-header">
             <p class="heading-primary heading-primary--black">Innovate</p>
             <img
@@ -444,9 +457,9 @@
               <a href="#" class="section-values-btn">Book Consultation</a>
             </div>
           </div>
-        </section>
+        </section> -->
       </main>
-      <footer class="footer">
+      <!-- <footer class="footer">
         <div class="content">
           <div class="top-content">
             <img src="./assets/img/logo.svg" alt="logo" class="logo" />
@@ -468,7 +481,8 @@
             <a href="#" class="sm-example"></a>
           </div>
         </div>
-      </footer>
+      </footer> -->
     </div>
+    <script src="./js/index.js"></script>
   </body>
 </html>

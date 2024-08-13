@@ -12,6 +12,10 @@
     transparent 50%
   );
 
+  &__content {
+    padding: 0 2rem;
+  }
+
   @include respond(phone) {
     padding: 5.5rem 0 10rem 0;
   }

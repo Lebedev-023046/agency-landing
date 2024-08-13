@@ -5,6 +5,15 @@
     &--top-left {
       top: -4rem;
       left: -4rem;
+
+      @include respond(tab-land) {
+        top: -8%;
+        left: -8%;
+      }
+
+      @include respond(tab-port) {
+        display: none;
+      }
     }
   }
 

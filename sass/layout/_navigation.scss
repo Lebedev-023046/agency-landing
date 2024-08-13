@@ -1,30 +1,134 @@
+.navigation-container {
+  position: relative;
+}
+
 .navigation {
+  position: relative;
+  &__checkbox {
+    display: none;
+  }
+
+  &__button {
+    position: relative;
+    text-align: center;
+    // background-color: $color-white;
+    width: 5rem;
+    aspect-ratio: 1;
+    // position: fixed;
+    // top: 6rem;
+    // right: 6rem;
+    border-radius: 50%;
+    z-index: 2000;
+
+    box-shadow: 0 1rem 3rem rgba($color-black, 0.1);
+    cursor: pointer;
+
+    // @include respond(tab-port) {
+    //   top: 4.5rem;
+    //   right: 4.5rem;
+    // }
+
+    // @include respond(phone) {
+    //   top: 3rem;
+    //   right: 3rem;
+    // }
+  }
+
+  &__checkbox:checked ~ .navigation__button &__background {
+    transform: scale(80);
+  }
+
   .burger {
+    position: relative;
+    z-index: 2000;
     display: none;
     width: 5rem;
     aspect-ratio: 1;
     border-radius: 50%;
     background: url('../../assets/img/burger.svg') #2a2a2a no-repeat center;
-    @include respond(phone) {
+    @include respond(tab-port) {
       display: block;
     }
+  }
+
+  &__background {
+    display: none;
+    height: 3rem;
+    width: 3rem;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    right: 50%;
+    transform: translate(50%, -50%);
+    background-image: radial-gradient($color-black, $color-black-shade);
+    z-index: 1000;
+    transition: transform 0.6s cubic-bezier(0.86, 0, 0.07, 1);
+
+    @include respond(tab-port) {
+      display: block;
+    }
+
+    // @include respond(phone) {
+    //   top: 3.2rem;
+    //   right: 3.2rem;
+    // }
   }
 
   &__list {
     display: flex;
     column-gap: 4rem;
+    font-size: 1.8rem;
+    transition: all 0.6s cubic-bezier(0.68, -0.55, 0.27, 1.55);
 
-    @include respond(phone) {
-      display: none;
+    @include respond(tab-port) {
+      // display: none;
+
+      position: fixed;
+      top: 50%;
+      right: 50%;
+      transform: translate(50%, -50%);
+      list-style: none;
+      text-align: center;
+      z-index: 2000;
+      justify-content: center;
+      flex-direction: column;
+      row-gap: 4rem;
+      font-size: 4rem;
+
+      opacity: 0;
+      width: 0;
     }
   }
 
+  &__checkbox:checked ~ &__list {
+    opacity: 1;
+    width: 100%;
+  }
+
   &__item {
+    position: relative;
+    z-index: 3000;
     color: $color-white;
-    font-size: 1.8rem;
+    font-size: inherit;
     transition: 0.15s ease-in-out;
+    cursor: pointer;
     &:hover {
       color: $color-secondary;
     }
+  }
+
+  &__link {
+    display: inline-block;
+    width: 100%;
+
+    // @include respond(tab-port) {
+    //   width: 0%;
+    // }
+
+    // transition: width 1s cubic-bezier(0.68, -0.55, 0.27, 1.55);
+  }
+
+  &__checkbox:checked ~ &__list &__link {
+    // width: 100%;
   }
 }
