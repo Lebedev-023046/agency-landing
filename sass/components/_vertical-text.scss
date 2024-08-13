@@ -11,7 +11,7 @@
   white-space: nowrap;
   transform: rotate(180deg);
 
-  @include respond(phone) {
+  @include respond(tab-land) {
     display: none;
   }
 
