@@ -7,7 +7,7 @@
     column-gap: 5rem;
   }
 
-  @include respond(phone) {
+  @include respond(tab-port) {
     flex-direction: column;
     row-gap: 4rem;
   }
