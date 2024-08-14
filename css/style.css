@@ -19,9 +19,9 @@ body {
 .heading-primary {
   backface-visibility: hidden;
   line-height: 120%;
-  font-size: 8rem;
+  font-size: clamp(2rem, 5vw, 8rem);
 }
-@media (max-width: 56.25em) {
+@media (max-width: 75em) {
   .heading-primary {
     font-size: 6rem;
   }
@@ -628,7 +628,7 @@ body {
   justify-content: center;
   column-gap: 2rem;
 }
-@media (max-width: 37.5em) {
+@media (max-width: 75em) {
   .section-values-header {
     flex-direction: column;
     row-gap: 1rem;

@@ -21,9 +21,11 @@ body {
   backface-visibility: hidden;
 
   line-height: 120%;
-  font-size: 8rem;
+  // font-size: 8rem;
 
-  @include respond(tab-port) {
+  font-size: clamp(2rem, 5vw, 8rem);
+
+  @include respond(tab-land) {
     font-size: 6rem;
   }
   @include respond(phone) {

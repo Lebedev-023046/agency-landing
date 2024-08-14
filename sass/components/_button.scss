@@ -37,6 +37,10 @@
     transition: 0.15s ease-in-out;
     max-width: max-content;
 
+    @include respond(tab-phone) {
+      padding: 1.5rem 2.5rem;
+    }
+
     &:hover {
       background-color: $color-primary;
       color: $color-white;
