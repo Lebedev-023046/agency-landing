@@ -78,10 +78,12 @@
 
       .info {
         position: relative;
+        min-width: max-content;
         font-size: 1.6rem;
 
         &:before {
-          display: inline-block;
+          display: inline;
+          word-wrap: none;
           content: url('./../assets/img/chart-secondary.svg');
           height: 100%;
           width: 3rem;
