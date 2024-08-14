@@ -7,7 +7,7 @@
     white-space: nowrap;
 
     &::after {
-      content: url('../../assets/img/arrow-right.svg');
+      content: url('../assets/img/arrow-right.svg');
       position: absolute;
       top: 50%;
       transform: translateY(-50%);

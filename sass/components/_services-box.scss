@@ -71,24 +71,24 @@
       &:nth-child(1) {
         position: relative;
         z-index: 1;
-        background: url('../../assets/img/services/google.png') no-repeat center;
+        background: url('../assets/img/services/google.png') no-repeat center;
         background-size: contain;
         transform: rotate(-15deg) translateY(4rem);
       }
       &:nth-child(2) {
         position: relative;
         z-index: 2;
-        background: url('../../assets/img/services/tg.png') no-repeat center;
+        background: url('../assets/img/services/tg.png') no-repeat center;
         background-size: contain;
         transform: rotate(15deg) translateY(3rem);
       }
       &:nth-child(3) {
-        background: url('../../assets/img/services/fb.png') no-repeat center;
+        background: url('../assets/img/services/fb.png') no-repeat center;
         background-size: contain;
         transform: rotate(-5deg) translateY(-2rem);
       }
       &:nth-child(4) {
-        background: url('../../assets/img/services/3D.png') no-repeat center;
+        background: url('../assets/img/services/3D.png') no-repeat center;
         background-size: contain;
         transform: rotate(20deg) translate(-2rem, -1rem);
       }

@@ -1,6 +1,6 @@
 @font-face {
   font-family: "ME-regular";
-  src: url("../../assets/fonts/ME-regular.otf");
+  src: url("../assets/fonts/ME-regular.otf");
 }
 body {
   font-family: "Archivo", sans-serif;
@@ -308,7 +308,7 @@ body {
   white-space: nowrap;
 }
 .btn-service::after {
-  content: url("../../assets/img/arrow-right.svg");
+  content: url("../assets/img/arrow-right.svg");
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
@@ -423,7 +423,7 @@ body {
   width: 5rem;
   margin-left: auto;
   align-self: flex-start;
-  background: url("../../assets/img/quoteup.svg") no-repeat center center;
+  background: url("../assets/img/quoteup.svg") no-repeat center center;
 }
 
 .story {
@@ -597,7 +597,7 @@ body {
   width: 55%;
   max-height: 50rem;
   aspect-ratio: 1.5;
-  background: url("../../assets/img/potential/horisontal.png") no-repeat center;
+  background: url("../assets/img/potential/horisontal.png") no-repeat center;
 }
 
 .img-vertical {
@@ -605,7 +605,7 @@ body {
   max-height: 66rem;
   margin-top: -5rem;
   aspect-ratio: 0.66;
-  background: url("../../assets/img/potential/vertical.png") no-repeat center;
+  background: url("../assets/img/potential/vertical.png") no-repeat center;
 }
 @media (max-width: 37.5em) {
   .img-vertical {
@@ -659,7 +659,7 @@ body {
   height: 28rem;
   color: #fff;
   border-radius: 2.3rem;
-  background-image: url("../../assets/img/values/ornament.png");
+  background-image: url("../assets/img/values/ornament.png");
   background-color: #222222;
   background-size: cover;
   background-repeat: no-repeat;
@@ -686,7 +686,7 @@ body {
 }
 .section-values-image-block .content-block .info:before {
   display: inline-block;
-  content: url("../../assets/img/chart-secondary.svg");
+  content: url("../assets/img/chart-secondary.svg");
   height: 100%;
   width: 3rem;
   text-align: center;
@@ -800,24 +800,24 @@ body {
 .right-column .huge-img-box .service-img:nth-child(1) {
   position: relative;
   z-index: 1;
-  background: url("../../assets/img/services/google.png") no-repeat center;
+  background: url("../assets/img/services/google.png") no-repeat center;
   background-size: contain;
   transform: rotate(-15deg) translateY(4rem);
 }
 .right-column .huge-img-box .service-img:nth-child(2) {
   position: relative;
   z-index: 2;
-  background: url("../../assets/img/services/tg.png") no-repeat center;
+  background: url("../assets/img/services/tg.png") no-repeat center;
   background-size: contain;
   transform: rotate(15deg) translateY(3rem);
 }
 .right-column .huge-img-box .service-img:nth-child(3) {
-  background: url("../../assets/img/services/fb.png") no-repeat center;
+  background: url("../assets/img/services/fb.png") no-repeat center;
   background-size: contain;
   transform: rotate(-5deg) translateY(-2rem);
 }
 .right-column .huge-img-box .service-img:nth-child(4) {
-  background: url("../../assets/img/services/3D.png") no-repeat center;
+  background: url("../assets/img/services/3D.png") no-repeat center;
   background-size: contain;
   transform: rotate(20deg) translate(-2rem, -1rem);
 }
@@ -979,16 +979,16 @@ body {
   margin-block: 4rem;
 }
 .process-card .discovery {
-  background: url("../../assets/img/processes/discovery.png") no-repeat;
+  background: url("../assets/img/processes/discovery.png") no-repeat;
 }
 .process-card .strategy {
-  background: url("../../assets/img/processes/strategy.png") no-repeat;
+  background: url("../assets/img/processes/strategy.png") no-repeat;
 }
 .process-card .advertisement {
-  background: url("../../assets/img/processes/advertisement.png") no-repeat;
+  background: url("../assets/img/processes/advertisement.png") no-repeat;
 }
 .process-card .testing {
-  background: url("../../assets/img/processes/testing.png") no-repeat;
+  background: url("../assets/img/processes/testing.png") no-repeat;
 }
 
 .section-projects-slider {
@@ -1020,11 +1020,11 @@ body {
   }
 }
 .section-projects-slider-card:nth-child(1) {
-  background: url("../../assets/img/projects/left.png") no-repeat center;
+  background: url("../assets/img/projects/left.png") no-repeat center;
   background-size: cover;
 }
 .section-projects-slider-card:nth-child(2) {
-  background: url("../../assets/img/projects/right.png") no-repeat center;
+  background: url("../assets/img/projects/right.png") no-repeat center;
   background-size: cover;
 }
 @media (max-width: 37.5em) {
@@ -1058,7 +1058,7 @@ body {
   aspect-ratio: 1;
   border-radius: 50%;
   background-color: #9dff50;
-  background-image: url("../../assets/img/arrow-top-right-black.svg");
+  background-image: url("../assets/img/arrow-top-right-black.svg");
   background-repeat: no-repeat;
   background-position: center center;
 }
@@ -1149,7 +1149,7 @@ body {
   aspect-ratio: 1;
   border-radius: 50%;
   border: 1px solid #fff;
-  background: url("../../assets/img/arroy-right-white.svg") no-repeat center;
+  background: url("../assets/img/arroy-right-white.svg") no-repeat center;
 }
 .section-feedback .controls .go-left {
   transform: rotate(180deg);
@@ -1178,7 +1178,7 @@ body {
   width: 5rem;
   aspect-ratio: 1;
   border-radius: 50%;
-  background: url("../../assets/img/burger.svg") #2a2a2a no-repeat center;
+  background: url("../assets/img/burger.svg") #2a2a2a no-repeat center;
 }
 @media (max-width: 56.25em) {
   .navigation .burger {
@@ -1225,10 +1225,12 @@ body {
     font-size: 4rem;
     opacity: 0;
     width: 0;
+    visibility: hidden;
   }
 }
 .navigation__checkbox:checked ~ .navigation__list {
   opacity: 1;
+  visibility: visible;
   width: 100%;
 }
 .navigation__item {
@@ -1354,16 +1356,16 @@ body {
   border-radius: 50%;
 }
 .footer .sm-example:nth-child(1) {
-  background: #333 url("../../assets/img/socials/telegram.svg") no-repeat center;
+  background: #333 url("../assets/img/socials/telegram.svg") no-repeat center;
 }
 .footer .sm-example:nth-child(2) {
-  background: #333 url("../../assets/img/socials/instagram.svg") no-repeat center;
+  background: #333 url("../assets/img/socials/instagram.svg") no-repeat center;
 }
 .footer .sm-example:nth-child(3) {
-  background: #333 url("../../assets/img/socials/whatsapp.svg") no-repeat center;
+  background: #333 url("../assets/img/socials/whatsapp.svg") no-repeat center;
 }
 .footer .sm-example:nth-child(4) {
-  background: #333 url("../../assets/img/socials/ball.svg") no-repeat center;
+  background: #333 url("../assets/img/socials/ball.svg") no-repeat center;
 }
 
 /*# sourceMappingURL=style.comp.css.map */

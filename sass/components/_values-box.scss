@@ -53,7 +53,7 @@
     height: 28rem;
     color: $color-white;
     border-radius: 2.3rem;
-    background-image: url('../../assets/img/values/ornament.png');
+    background-image: url('../assets/img/values/ornament.png');
     background-color: $color-primary;
     background-size: cover;
     background-repeat: no-repeat;
@@ -82,7 +82,7 @@
 
         &:before {
           display: inline-block;
-          content: url('../../assets/img/chart-secondary.svg');
+          content: url('../assets/img/chart-secondary.svg');
           height: 100%;
           width: 3rem;
           text-align: center;
