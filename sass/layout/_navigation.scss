@@ -50,16 +50,27 @@
   }
 
   &__background {
+    // display: none;
+    // height: 3rem;
+    // width: 3rem;
+    // border-radius: 50%;
+    // position: absolute;
+    // top: 50%;
+    // right: 50%;
+    // transform: translate(50%, -50%);
+    // background-image: radial-gradient($color-black, $color-black-shade);
+    // transition: transform 0.6s cubic-bezier(0.86, 0, 0.07, 1);
+    position: relative;
     display: none;
+    z-index: 1000;
     height: 3rem;
     width: 3rem;
     border-radius: 50%;
-    position: absolute;
-    top: 50%;
-    right: 50%;
+    /* position: absolute; */
+    top: -16px;
+    /* right: 50%; */
     transform: translate(50%, -50%);
-    background-image: radial-gradient($color-black, $color-black-shade);
-    z-index: 1000;
+    background-image: radial-gradient(#010101, #333333);
     transition: transform 0.6s cubic-bezier(0.86, 0, 0.07, 1);
 
     @include respond(tab-port) {
