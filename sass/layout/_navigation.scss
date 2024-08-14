@@ -43,7 +43,7 @@
     width: 5rem;
     aspect-ratio: 1;
     border-radius: 50%;
-    background: url('../assets/img/burger.svg') #2a2a2a no-repeat center;
+    background: url('./../assets/img/burger.svg') #2a2a2a no-repeat center;
     @include respond(tab-port) {
       display: block;
     }

@@ -69,19 +69,19 @@
     border-radius: 50%;
 
     &:nth-child(1) {
-      background: #333 url('../assets/img/socials/telegram.svg') no-repeat
+      background: #333 url('./../assets/img/socials/telegram.svg') no-repeat
         center;
     }
     &:nth-child(2) {
-      background: #333 url('../assets/img/socials/instagram.svg') no-repeat
+      background: #333 url('./../assets/img/socials/instagram.svg') no-repeat
         center;
     }
     &:nth-child(3) {
-      background: #333 url('../assets/img/socials/whatsapp.svg') no-repeat
+      background: #333 url('./../assets/img/socials/whatsapp.svg') no-repeat
         center;
     }
     &:nth-child(4) {
-      background: #333 url('../assets/img/socials/ball.svg') no-repeat center;
+      background: #333 url('./../assets/img/socials/ball.svg') no-repeat center;
     }
   }
 }

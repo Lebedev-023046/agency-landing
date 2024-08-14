@@ -28,11 +28,11 @@
       }
 
       &:nth-child(1) {
-        background: url('../assets/img/projects/left.png') no-repeat center;
+        background: url('./../assets/img/projects/left.png') no-repeat center;
         background-size: cover;
       }
       &:nth-child(2) {
-        background: url('../assets/img/projects/right.png') no-repeat center;
+        background: url('./../assets/img/projects/right.png') no-repeat center;
         background-size: cover;
 
         @include respond(phone) {
@@ -76,7 +76,7 @@
       aspect-ratio: 1;
       border-radius: 50%;
       background-color: $color-secondary;
-      background-image: url('../assets/img/arrow-top-right-black.svg');
+      background-image: url('./../assets/img/arrow-top-right-black.svg');
       background-repeat: no-repeat;
       background-position: center center;
     }
