@@ -1,9 +1,7 @@
 .navigation-container {
-  position: relative;
 }
 
 .navigation {
-  position: relative;
   &__checkbox {
     display: none;
   }
@@ -83,7 +81,7 @@
     @include respond(tab-port) {
       // display: none;
 
-      position: fixed;
+      position: absolute;
       top: 50%;
       right: 50%;
       transform: translate(50%, -50%);
@@ -91,8 +89,9 @@
       text-align: center;
       z-index: 2000;
       justify-content: center;
+      align-items: center;
       flex-direction: column;
-      row-gap: 4rem;
+      row-gap: 3rem;
       font-size: 4rem;
 
       opacity: 0;
@@ -106,6 +105,8 @@
   }
 
   &__item {
+    display: inline-block;
+    max-width: fit-content;
     position: relative;
     z-index: 3000;
     color: $color-white;
@@ -120,6 +121,7 @@
   &__link {
     display: inline-block;
     width: 100%;
+    padding: 1rem;
 
     // @include respond(tab-port) {
     //   width: 0%;

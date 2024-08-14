@@ -1155,13 +1155,6 @@ body {
   transform: rotate(180deg);
 }
 
-.navigation-container {
-  position: relative;
-}
-
-.navigation {
-  position: relative;
-}
 .navigation__checkbox {
   display: none;
 }
@@ -1218,7 +1211,7 @@ body {
 }
 @media (max-width: 56.25em) {
   .navigation__list {
-    position: fixed;
+    position: absolute;
     top: 50%;
     right: 50%;
     transform: translate(50%, -50%);
@@ -1226,8 +1219,9 @@ body {
     text-align: center;
     z-index: 2000;
     justify-content: center;
+    align-items: center;
     flex-direction: column;
-    row-gap: 4rem;
+    row-gap: 3rem;
     font-size: 4rem;
     opacity: 0;
     width: 0;
@@ -1238,6 +1232,8 @@ body {
   width: 100%;
 }
 .navigation__item {
+  display: inline-block;
+  max-width: fit-content;
   position: relative;
   z-index: 3000;
   color: #fff;
@@ -1251,6 +1247,7 @@ body {
 .navigation__link {
   display: inline-block;
   width: 100%;
+  padding: 1rem;
 }
 .header {
   display: flex;
