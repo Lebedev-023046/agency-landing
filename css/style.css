@@ -723,6 +723,7 @@ body {
   border-radius: 4rem;
   padding: 2.3rem;
   border: 1px solid #222222;
+  max-width: 30rem;
   width: 100%;
 }
 .section-values-btn--active {
@@ -1275,6 +1276,7 @@ body {
   width: 100%;
 }
 .header__btn {
+  display: inline-block;
   color: #222222;
   background-color: #9dff50;
   font-size: 1.6rem;
