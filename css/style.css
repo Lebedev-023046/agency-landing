@@ -306,6 +306,7 @@ body {
   border: 1px solid #dddddd;
   border-radius: 10rem;
   white-space: nowrap;
+  color: #444444;
 }
 .btn-service::after {
   content: url("./../assets/img/arrow-right.svg");
