@@ -301,6 +301,7 @@ body {
   border: 1px solid #dddddd;
   border-radius: 10rem;
   white-space: nowrap;
+  color: inherit;
   color: #444444;
 }
 .btn-service::after {
@@ -994,6 +995,7 @@ body {
   column-gap: 2rem;
   padding: 5rem 3.2rem;
   width: 100%;
+  color: #222222;
 }
 .section-projects-slider-cards {
   display: flex;
