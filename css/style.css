@@ -116,6 +116,11 @@ body {
 .paragraph--white {
   color: #fff;
 }
+@media (max-width: 37.5em) {
+  .paragraph {
+    font-size: 1.9rem;
+  }
+}
 
 .u-width-50 {
   width: 50%;
@@ -920,7 +925,7 @@ body {
 }
 @media (max-width: 37.5em) {
   .section-process-heading-content .section-info {
-    max-width: 90%;
+    width: 100%;
   }
 }
 .section-process-heading-content .star-content {
@@ -930,7 +935,7 @@ body {
 @media (max-width: 37.5em) {
   .section-process-heading-content .star-left,
   .section-process-heading-content .star-right {
-    max-width: 4rem;
+    display: none;
   }
 }
 .section-process-heading-content .star-left {
