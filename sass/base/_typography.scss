@@ -118,7 +118,7 @@ body {
     color: $color-white;
   }
 
-  // @include respond(phone) {
-  //   font-size: 1.8rem;
-  // }
+  @include respond(phone) {
+    font-size: 1.9rem;
+  }
 }

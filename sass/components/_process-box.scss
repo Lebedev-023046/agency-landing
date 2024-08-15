@@ -11,7 +11,7 @@
     width: 70%;
 
     @include respond(phone) {
-      max-width: 90%;
+      width: 100%;
     }
   }
 
@@ -23,7 +23,7 @@
   .star-left,
   .star-right {
     @include respond(phone) {
-      max-width: 4rem;
+      display: none;
     }
   }
 
