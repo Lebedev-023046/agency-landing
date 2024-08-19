@@ -5,7 +5,11 @@
     "nav-portfolio": "портфолио",
     "nav-pricing": "цена",
     "nav-about": "о нас",
-    "contact-us": "Связаться с нами"
+    "contact-us": "Связаться с нами",
+    "hero-unskewed-text": "Маркетинговое",
+    "heading-primary": "Агентство",
+    "heading-secondary-hero": "Цифровое агентство, основанное в чехии",
+    "heading-tertiary-hero": "IK.Agency - это динамичное и инновационное маркетинговое агентство, которое помогает клиентам достигать поставленных целей в рекламе. "
   },
   "en": {
     "nav-home": "home",
@@ -13,6 +17,10 @@
     "nav-portfolio": "portfolio",
     "nav-pricing": "pricing",
     "nav-about": "about",
-    "contact-us": "Contact Us"
+    "contact-us": "Contact Us",
+    "hero-unskewed-text": "Marketing",
+    "heading-primary": "Agency",
+    "heading-secondary-hero": "Czech-Based Digital Agency",
+    "heading-tertiary-hero": "IK.Agency is a dynamic and innovative marketing agency that helps clients achieve their advertising goals. With our expertise and experience, we guarantee exceptional results."
   }
 }

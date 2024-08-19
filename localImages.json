@@ -1,0 +1,14 @@
+{
+  "en": {
+    "adult": "./assets/img/cases/en/adult.jpg",
+    "nutra": "/assets/img/cases/en/nutra.jpg",
+    "casino": "/assets/img/cases/en/casino.jpg",
+    "apps": "/assets/img/cases/en/apps.jpg"
+  },
+  "ru": {
+    "adult": "/assets/img/cases/ru/adult.jpg",
+    "nutra": "/assets/img/cases/ru/nutra.jpg",
+    "casino": "/assets/img/cases/ru/casino.jpg",
+    "apps": "/assets/img/cases/ru/apps.jpg"
+  }
+}

@@ -1,4 +1,9 @@
 import langs from '../langs.json' with { type: 'json' };
+import localImgPaths from '../localImages.json' with { type: 'json' };
+
+
+
+
 
 // BURGER
 
@@ -38,13 +43,27 @@ function changeLanguage() {
 
   const currentLanguageContent = langs[hash]
 
+
+
+
+  // text changing
   for (let key in currentLanguageContent) {
 
-    console.log(key)
-
     const element = document.querySelector(`.lang-${key}`)
-    element.innerHTML = currentLanguageContent[key]
+
+    const textNode = element.childNodes[element.childNodes.length - 1];
+
+    if (textNode.nodeType === Node.TEXT_NODE) {
+      textNode.textContent = currentLanguageContent[key];
+    }
   }
+
+  // image changing
+  const heroImages = document.querySelectorAll(".cases__card-img")
+
+  Object.entries(localImgPaths[hash]).forEach(([_, value], index) => {
+    heroImages[index].src = value
+  });
 }
 
 changeLanguage();
