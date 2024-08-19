@@ -1,0 +1,18 @@
+{
+  "ru": {
+    "nav-home": "меню",
+    "nav-services": "услуги",
+    "nav-portfolio": "портфолио",
+    "nav-pricing": "цена",
+    "nav-about": "о нас",
+    "contact-us": "Связаться с нами"
+  },
+  "en": {
+    "nav-home": "home",
+    "nav-services": "services",
+    "nav-portfolio": "portfolio",
+    "nav-pricing": "pricing",
+    "nav-about": "about",
+    "contact-us": "Contact Us"
+  }
+}

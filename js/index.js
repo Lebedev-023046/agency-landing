@@ -1,3 +1,5 @@
+import langs from '../langs.json' with { type: 'json' };
+
 // BURGER
 
 const checkbox = document.querySelector('.navigation__checkbox');
@@ -33,6 +35,16 @@ function changeLanguage() {
   }
 
   select.value = hash;
+
+  const currentLanguageContent = langs[hash]
+
+  for (let key in currentLanguageContent) {
+
+    console.log(key)
+
+    const element = document.querySelector(`.lang-${key}`)
+    element.innerHTML = currentLanguageContent[key]
+  }
 }
 
 changeLanguage();
