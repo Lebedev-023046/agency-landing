@@ -50,12 +50,14 @@ function changeLanguage() {
   for (let key in currentLanguageContent) {
 
     const element = document.querySelector(`.lang-${key}`)
+    console.log(element)
+    element.textContent = currentLanguageContent[key]
 
-    const textNode = element.childNodes[element.childNodes.length - 1];
+    // const textNode = element.childNodes[element.childNodes.length - 1];
 
-    if (textNode.nodeType === Node.TEXT_NODE) {
-      textNode.textContent = currentLanguageContent[key];
-    }
+    // if (textNode.nodeType === Node.TEXT_NODE) {
+    //   textNode.textContent = currentLanguageContent[key]; // Replace with your desired text
+    // }
   }
 
   // image changing
