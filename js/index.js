@@ -61,3 +61,23 @@ function changeLanguage() {
 }
 
 changeLanguage();
+
+
+// SWIPER
+
+// new Swiper(".swiper", {
+//   navigation: {
+//     prevEl: ".swiper-button-prev",
+//     nextEl: ".swiper-button-next",
+//   },
+
+
+//   breakpoints: {
+//     320: {
+//       slidesPerView: 1,
+//     },
+//     990: {
+//       slidesPerView: 2,
+//     }
+//   }
+// })
