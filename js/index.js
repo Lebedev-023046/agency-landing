@@ -65,19 +65,20 @@ changeLanguage();
 
 // SWIPER
 
-// new Swiper(".swiper", {
-//   navigation: {
-//     prevEl: ".swiper-button-prev",
-//     nextEl: ".swiper-button-next",
-//   },
+new Swiper(".swiper", {
+  navigation: {
+    prevEl: ".swiper-button-prev",
+    nextEl: ".swiper-button-next",
+  },
 
+  spaceBetween: 15,
 
-//   breakpoints: {
-//     320: {
-//       slidesPerView: 1,
-//     },
-//     990: {
-//       slidesPerView: 2,
-//     }
-//   }
-// })
+  breakpoints: {
+    320: {
+      slidesPerView: 1,
+    },
+    990: {
+      slidesPerView: 2,
+    }
+  }
+})
