@@ -1403,10 +1403,19 @@ body {
   }
 }
 .header .lang-select {
-  border: none;
-  outline: none;
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  font-size: 1.6rem;
   color: #222222;
-  background-color: inherit;
+  border: none;
+  padding-right: 2.5rem;
+  background: url("./../assets/img/chevrone.svg") #9dff50 no-repeat;
+  background-position: right;
+  background-size: 50%;
+}
+.header .lang-select:focus {
+  outline: none;
 }
 .header__btn {
   display: inline-block;
