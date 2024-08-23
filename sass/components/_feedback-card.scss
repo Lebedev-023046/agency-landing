@@ -1,10 +1,11 @@
 .feedback-card {
+  box-sizing: border-box;
   border-radius: 3rem;
   padding: 2.3rem 4rem;
   background-color: #2a2a2a;
   color: $color-white;
-  max-width: 65rem;
-  width: 100%;
+  // max-width: 65rem;
+  max-width: 100%;
 
   .card-header {
     display: flex;

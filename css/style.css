@@ -397,12 +397,12 @@ body {
 }
 
 .feedback-card {
+  box-sizing: border-box;
   border-radius: 3rem;
   padding: 2.3rem 4rem;
   background-color: #2a2a2a;
   color: #fff;
-  max-width: 65rem;
-  width: 100%;
+  max-width: 100%;
 }
 .feedback-card .card-header {
   display: flex;
@@ -1201,6 +1201,20 @@ body {
 @media (max-width: 37.5em) {
   .section-feedback .star-right {
     display: none;
+  }
+}
+.section-feedback .swiper-feedback-outer-container {
+  max-width: 60%;
+  margin: 0 auto;
+}
+@media (max-width: 56.25em) {
+  .section-feedback .swiper-feedback-outer-container {
+    max-width: 80%;
+  }
+}
+@media (max-width: 37.5em) {
+  .section-feedback .swiper-feedback-outer-container {
+    max-width: 90%;
   }
 }
 .section-feedback .slider {

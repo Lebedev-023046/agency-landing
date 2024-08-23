@@ -65,7 +65,7 @@ changeLanguage();
 
 // SWIPER
 
-new Swiper(".swiper", {
+new Swiper(".swiper-projects", {
   navigation: {
     prevEl: ".swiper-button-prev",
     nextEl: ".swiper-button-next",
@@ -81,4 +81,28 @@ new Swiper(".swiper", {
       slidesPerView: 2,
     }
   }
+})
+
+new Swiper(".swiper-feedback", {
+  navigation: {
+    prevEl: ".go-left",
+    nextEl: ".go-right",
+  },
+
+  spaceBetween: 15,
+
+  slidesPerView: 1,
+
+  initialSlide: 1,
+
+  loop: true
+
+  // breakpoints: {
+  //   320: {
+  //     slidesPerView: 1,
+  //   },
+  //   990: {
+  //     slidesPerView: 2,
+  //   }
+  // }
 })
