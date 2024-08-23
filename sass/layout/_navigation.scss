@@ -1,4 +1,7 @@
 .navigation-container {
+  @include respond(tab-port) {
+    order: 1;
+  }
 }
 
 .navigation {
@@ -11,7 +14,8 @@
     text-align: center;
     // background-color: $color-white;
     width: 5rem;
-    aspect-ratio: 1;
+    height: 5rem;
+
     // position: fixed;
     // top: 6rem;
     // right: 6rem;
@@ -21,10 +25,9 @@
     box-shadow: 0 1rem 3rem rgba($color-black, 0.1);
     cursor: pointer;
 
-    // @include respond(tab-port) {
-    //   top: 4.5rem;
-    //   right: 4.5rem;
-    // }
+    @include respond(tab-port) {
+      display: inline-block;
+    }
 
     // @include respond(phone) {
     //   top: 3rem;
@@ -129,6 +132,7 @@
     display: inline-block;
     width: 100%;
     padding: 1rem;
+    text-transform: capitalize;
 
     // @include respond(tab-port) {
     //   width: 0%;

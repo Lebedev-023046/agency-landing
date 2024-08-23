@@ -11,6 +11,18 @@
       rel="stylesheet"
     />
 
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Unbounded:wght@200..900&family=Work+Sans:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+
     <link rel="stylesheet" href="css/style.css" />
     <title>IK.Agency</title>
   </head>
@@ -34,52 +46,67 @@
 
             <ul class="navigation__list">
               <li class="navigation__item">
-                <a href="#" class="navigation__link">Home</a>
+                <a href="#" class="lang-nav-home navigation__link">home</a>
               </li>
               <li class="navigation__item">
-                <a href="#" class="navigation__link">Services</a>
+                <a href="#" class="lang-nav-services navigation__link"
+                  >services</a
+                >
               </li>
               <li class="navigation__item">
                 <a
                   target="_blank"
                   href="https://teletype.in/@ik.agency"
-                  class="navigation__link"
-                  >Portfolio</a
+                  class="lang-nav-portfolio navigation__link"
+                  >portfolio</a
                 >
               </li>
               <li class="navigation__item">
-                <a href="#" class="navigation__link">Pricing</a>
+                <a href="#" class="lang-nav-pricing navigation__link"
+                  >pricing</a
+                >
               </li>
               <li class="navigation__item">
-                <a href="#" class="navigation__link">About</a>
+                <a href="#" class="lang-nav-about navigation__link">about</a>
               </li>
             </ul>
           </nav>
         </div>
 
-        <a
-          target="_blank"
-          href="https://t.me/IK_Agency"
-          class="header__btn contact-us"
-          >Contact Us</a
-        >
+        <div class="header-btns">
+          <a
+            target="_blank"
+            href="https://t.me/IK_Agency"
+            class="header__btn lang-contact-us contact-us"
+            >Contact Us</a
+          >
+          <div class="select-container">
+            <select class="lang-select" name="lang-select" id="lang-select-id">
+              <option value="ru" selected>ru</option>
+              <option value="en">en</option>
+            </select>
+            <div class="chevron"></div>
+          </div>
+        </div>
       </header>
       <main class="main">
         <section class="hero">
           <div class="hero__content">
             <div class="heading-primary heading-primary--white">
               <span class="bordered-area">
-                <span class="unskewed-text">Marketing</span>
+                <span class="unskewed-text lang-hero-unskewed-text"
+                  >Marketing</span
+                >
               </span>
-              Agency
+              <span class="lang-heading-primary">Agency</span>
             </div>
             <div
-              class="heading-secondary-hero heading-secondary--white u-margin-top-small"
+              class="heading-secondary-hero heading-secondary--white lang-heading-secondary-hero u-margin-top-small"
             >
               Czech-Based Digital Agency
             </div>
             <div
-              class="heading-tertiary heading-tertiary-hero u-margin-top-regular"
+              class="heading-tertiary heading-tertiary-hero lang-heading-tertiary-hero u-margin-top-regular"
             >
               k.Agency is a dynamic and innovative marketing agency that helps
               clients achieve their advertising goals. With our expertise and
@@ -88,26 +115,44 @@
           </div>
           <div class="cases">
             <div class="cases__card">
-              <img src="./assets/img/cases/en/adult.jpg" alt="adult" />
+              <img
+                class="cases__card-img"
+                src="./assets/img/cases/en/adult.jpg"
+                alt="adult"
+              />
             </div>
             <div class="cases__card">
-              <img src="./assets/img/cases/en/nutra.jpg" alt="nutra" />
+              <img
+                class="cases__card-img"
+                src="./assets/img/cases/en/nutra.jpg"
+                alt="nutra"
+              />
             </div>
             <div class="cases__card">
-              <img src="./assets/img/cases/en/casino.jpg" alt="casino" />
+              <img
+                class="cases__card-img"
+                src="./assets/img/cases/en/casino.jpg"
+                alt="casino"
+              />
             </div>
             <div class="cases__card">
-              <img src="./assets/img/cases/en/apps.jpg" alt="apps" />
+              <img
+                class="cases__card-img"
+                src="./assets/img/cases/en/apps.jpg"
+                alt="apps"
+              />
             </div>
           </div>
         </section>
 
         <section class="section-potential">
           <div class="text-content">
-            <h2 class="heading-secondary">
+            <h2 class="heading-secondary lang-potential-heading">
               Unlock Your Marketing Potential with us
             </h2>
-            <p class="paragraph text-content-paragraph">
+            <p
+              class="paragraph text-content-paragraph lang-potential-paragraph"
+            >
               Despite being a small team, we believe that it gives us only
               opportunities, allowing us to be flexible, adaptable and able to
               work closely with our clients to achieve truly awesome results
@@ -125,17 +170,23 @@
           </div>
         </section>
         <section class="section-services">
-          <div class="vertical-text vertical-text--secondary">what we do</div>
+          <div
+            class="vertical-text vertical-text--secondary lang-service-decoration"
+          >
+            what we do
+          </div>
           <h2 class="heading-secondary">
-            Our
-            <span class="bordered-area"
-              ><span class="unskewed-text">Services</span></span
-            >
+            <span class="lang-services-heading-secondary">Our</span>
+            <span class="bordered-area">
+              <span class="unskewed-text lang-services-unskewed-text">
+                Services</span
+              >
+            </span>
           </h2>
 
           <div class="columns">
             <div class="left-column">
-              <p class="paragraph">
+              <p class="paragraph lang-services-paragraph">
                 IK.Agency offers a range of marketing services elaborated to the
                 unique needs of each client
               </p>
@@ -165,11 +216,11 @@
                 <div class="service-img"></div>
               </div>
               <div class="right-column_img-box small-img-box">
-                <p class="paragraph">
+                <p class="paragraph lang-magic-question">
                   Have you ever wondered how marketing magic happens?
                 </p>
                 <div class="bottom-text">
-                  <p>
+                  <p class="lang-magic-answer">
                     see how <br />
                     we work
                   </p>
@@ -186,12 +237,12 @@
               <div
                 class="right-column_img-box small-img-box small-img-box--secondary"
               >
-                <p class="paragraph">
+                <p class="paragraph lang-benefits-question">
                   Are you looking for marketing specialists who can help your
                   business make a profit?
                 </p>
                 <div class="bottom-text">
-                  <p>
+                  <p class="lang-benefits-answer">
                     meet our <br />
                     experts
                   </p>
@@ -214,7 +265,9 @@
         <section class="section-process">
           <div class="section-process-content">
             <div class="section-process-heading-content">
-              <div class="vertical-text">see how it works</div>
+              <div class="vertical-text lang-process-vertical-text">
+                see how it works
+              </div>
               <div class="star-content">
                 <img
                   src="./assets/img/star-primary.svg"
@@ -223,12 +276,18 @@
                 />
                 <div class="section-info">
                   <h2 class="heading-secondary heading-secondary--white">
-                    How Our Marketing Process
+                    <span class="lang-process-heading"
+                      >How Our Marketing Process</span
+                    >
                     <span class="bordered-area">
-                      <span class="unskewed-text">Works</span>
+                      <span class="unskewed-text lang-process-unskewed-text"
+                        >Works</span
+                      >
                     </span>
                   </h2>
-                  <p class="paragraph paragraph--white u-margin-top-medium">
+                  <p
+                    class="paragraph lang-process-paragraph paragraph--white u-margin-top-medium"
+                  >
                     IK.Agency follows a collaborative and iterative approach to
                     marketing, with a focus on understanding and meeting the
                     unique needs of each client.
@@ -246,10 +305,14 @@
               <div class="process-card">
                 <div class="number">01</div>
                 <div class="img-block discovery"></div>
-                <div class="heading-tertiary heading-tertiary--white">
+                <div
+                  class="heading-tertiary lang-discovery-title heading-tertiary--white"
+                >
                   Discovery
                 </div>
-                <p class="paragraph paragraph--white u-margin-top-small">
+                <p
+                  class="paragraph paragraph--white lang-discovery-info u-margin-top-small"
+                >
                   We start by getting to know our clients, their business goals
                   and their target audience.
                 </p>
@@ -257,10 +320,14 @@
               <div class="process-card">
                 <div class="number">02</div>
                 <div class="img-block strategy"></div>
-                <div class="heading-tertiary heading-tertiary--white">
+                <div
+                  class="heading-tertiary lang-strategy-title heading-tertiary--white"
+                >
                   Strategy
                 </div>
-                <p class="paragraph paragraph--white u-margin-top-small">
+                <p
+                  class="paragraph lang-strategy-info paragraph--white u-margin-top-small"
+                >
                   We develop a strategy that outlines the marketing approach,
                   user experience, and key features of the project.
                 </p>
@@ -268,10 +335,14 @@
               <div class="process-card">
                 <div class="number">03</div>
                 <div class="img-block testing"></div>
-                <div class="heading-tertiary heading-tertiary--white">
+                <div
+                  class="heading-tertiary lang-testing-title heading-tertiary--white"
+                >
                   Testing
                 </div>
-                <p class="paragraph paragraph--white u-margin-top-small">
+                <p
+                  class="paragraph lang-testing-info paragraph--white u-margin-top-small"
+                >
                   We always test advertising creatives and landing pages before
                   launching the main advertisement so that our advertising is as
                   effective as possible.
@@ -280,10 +351,14 @@
               <div class="process-card">
                 <div class="number">04</div>
                 <div class="img-block advertisement"></div>
-                <div class="heading-tertiary heading-tertiary--white">
+                <div
+                  class="heading-tertiary lang-advertisement-title heading-tertiary--white"
+                >
                   Advertisement
                 </div>
-                <p class="paragraph paragraph--white u-margin-top-small">
+                <p
+                  class="paragraph lang-advertisement-info paragraph--white u-margin-top-small"
+                >
                   After testing, we already know exactly which settings we will
                   need to use to maximize the profit of our advertising
                   campaigns when scaling
@@ -294,39 +369,99 @@
         </section>
         <section class="section-projects">
           <div class="section-projects-content">
-            <div class="vertical-text vertical-text--secondary">portfolio</div>
+            <div
+              class="vertical-text lang-portfolio-vertical-text vertical-text--secondary"
+            >
+              portfolio
+            </div>
             <h2 class="heading-secondary u-width-50">
-              Our
+              <span class="lang-projects-heading-start">Our</span>
               <span class="bordered-area">
-                <span class="unskewed-text">Best Work</span>
+                <span class="unskewed-text lang-projects-unskewed-text"
+                  >Best Work</span
+                >
               </span>
-              of Successful Projects
+              <span class="lang-projects-heading-end"
+                >of Successful Projects</span
+              >
             </h2>
             <button class="btn btn-projects">
-              <a target="_blank" href="https://teletype.in/@ik.agency"
+              <a
+                class="lang-projects-btn"
+                target="_blank"
+                href="https://teletype.in/@ik.agency"
                 >See more &rarr;</a
               >
             </button>
           </div>
 
-          <div class="section-projects-slider">
-            <button class="btn btn-arrow">&larr;</button>
-            <div class="section-projects-slider-cards">
-              <div class="section-projects-slider-card"></div>
-              <div class="section-projects-slider-card"></div>
+          <div class="swiper-outer-container">
+            <div class="btn btn-arrow swiper-button-prev">&larr;</div>
+            <div class="swiper swiper-projects swiper-container">
+              <div class="image-slider__wrapper swiper-wrapper">
+                <div class="image-slider__slide swiper-slide">
+                  <div class="image-slider__image">
+                    <img
+                      src="./assets/img/projects/1.png"
+                      alt="results-picture"
+                    />
+                  </div>
+                </div>
+                <div class="image-slider__slide swiper-slide">
+                  <div class="image-slider__image">
+                    <img
+                      src="./assets/img/projects/2.png"
+                      alt="results-picture"
+                    />
+                  </div>
+                </div>
+                <div class="image-slider__slide swiper-slide">
+                  <div class="image-slider__image">
+                    <img
+                      src="./assets/img/projects/3.png"
+                      alt="results-picture"
+                    />
+                  </div>
+                </div>
+                <div class="image-slider__slide swiper-slide">
+                  <div class="image-slider__image">
+                    <img
+                      src="./assets/img/projects/4.png"
+                      alt="results-picture"
+                    />
+                  </div>
+                </div>
+                <div class="image-slider__slide swiper-slide">
+                  <div class="image-slider__image">
+                    <img
+                      src="./assets/img/projects/5.png"
+                      alt="results-picture"
+                    />
+                  </div>
+                </div>
+                <div class="image-slider__slide swiper-slide">
+                  <div class="image-slider__image">
+                    <img
+                      src="./assets/img/projects/6.png"
+                      alt="results-picture"
+                    />
+                  </div>
+                </div>
+              </div>
             </div>
-            <button class="btn btn-arrow btn-arrow--active u-width-15">
-              &rarr;
-            </button>
+            <div class="btn btn-arrow swiper-button-next">&rarr;</div>
           </div>
+
           <div class="advantages-block">
-            <span class="advantage-item">Grey traffic</span
-            ><span class="advantage-item">Large volumes</span
-            ><span class="advantage-item">Quickly recouped</span>
+            <span class="advantage-item lang-traffic">Grey traffic</span
+            ><span class="advantage-item lang-volumes">Large volumes</span
+            ><span class="advantage-item lang-recouped">Quickly recouped</span>
           </div>
           <div class="content-block">
             <h3 class="heading-secondary heading">
-              You can see most of our cases here
+              <span class="lang-more-cases"
+                >You can see most of our cases here</span
+              >
               <a
                 class="cases-link"
                 target="_blank"
@@ -334,7 +469,7 @@
               ></a>
             </h3>
 
-            <p class="paragraph projects-paragraph">
+            <p class="paragraph projects-paragraph lang-projects-paragraph">
               We start by getting to know our clients, their business goals, and
               their target audience. This involves conducting research,
               analyzing data, and discussing ideas with our clients to gain a
@@ -345,7 +480,9 @@
 
         <section class="section-feedback">
           <div class="content">
-            <div class="vertical-text">Testimonials</div>
+            <div class="vertical-text lang-feedback-vertical-text">
+              Testimonials
+            </div>
             <div class="heading-content">
               <div class="star-content">
                 <img
@@ -356,12 +493,16 @@
                 <div class="section-info">
                   <h2 class="heading-secondary heading-secondary--white">
                     <span class="bordered-area">
-                      <span class="unskewed-text">Testimonials</span>
+                      <span class="unskewed-text lang-feedback-unskewed-text"
+                        >Testimonials</span
+                      >
                     </span>
-                    that Speak to Our Results
+                    <span class="lang-feedback-heading"
+                      >that Speak to Our Results</span
+                    >
                   </h2>
                   <p
-                    class="paragraph paragraph-feedback paragraph--white u-margin-top-medium"
+                    class="paragraph paragraph-feedback lang-paragraph-feedback paragraph--white u-margin-top-medium"
                   >
                     Read through our testimonials to see why our clients love
                     working with us and how we can help you achieve your
@@ -376,93 +517,133 @@
                 />
               </div>
             </div>
+
+            <!-- ===================== -->
             <div class="slider">
-              <div class="slider-cards">
-                <div class="feedback-card">
-                  <div class="card-header">
-                    <div class="avatar"></div>
-                    <div class="user-info">
-                      <h3 class="name">Nikita Timurov</h3>
-                      <p class="about">CEO of Bioforce Company</p>
+              <div class="swiper-feedback-outer-container">
+                <div class="swiper swiper-feedback slider-cards">
+                  <div class="swiper-wrapper">
+                    <div class="feedback-card swiper-slide">
+                      <div class="card-header">
+                        <div class="avatar">
+                          <img
+                            src="./assets/img/feedback/dmitry.png"
+                            alt="avatar"
+                          />
+                        </div>
+                        <div class="user-info">
+                          <h3 class="name">Dmitry Volsky</h3>
+                          <p class="about">CEO of Mazy Brand</p>
+                        </div>
+                        <div class="decoration"></div>
+                      </div>
+                      <p
+                        class="paragraph card-content lang-volsky-feedback-paragraph"
+                      >
+                        The team at IK.Agency was a pleasure to work with. They
+                        were communicative, responsive, and provided valuable
+                        insights that helped us refine our marketing vision. We
+                        highly recommend them to anyone looking for top-notch
+                        marketing solutions.
+                      </p>
                     </div>
-                    <div class="decoration"></div>
+                    <div class="feedback-card swiper-slide">
+                      <div class="card-header">
+                        <div class="avatar">
+                          <img
+                            src="./assets/img/feedback/nikita.png"
+                            alt="avatar"
+                          />
+                        </div>
+                        <div class="user-info">
+                          <h3 class="name">Nikita Timurov</h3>
+                          <p class="about">CEO of Bioforce Company</p>
+                        </div>
+                        <div class="decoration"></div>
+                      </div>
+                      <p
+                        class="paragraph card-content lang-timurov-feedback-paragraph"
+                      >
+                        Working with IK.Agency has been an incredible
+                        experience. They truly listened to our needs and created
+                        effective advertising that exceeded our expectations. We
+                        couldn't be happier with the final result!
+                      </p>
+                    </div>
+                    <div class="feedback-card swiper-slide">
+                      <div class="card-header">
+                        <div class="avatar">
+                          <img
+                            src="./assets/img/feedback/ksenia.png"
+                            alt="avatar"
+                          />
+                        </div>
+                        <div class="user-info">
+                          <h3 class="name">Ksenia Myakisheva</h3>
+                          <p class="about">CEO of Tenerconsultabcn</p>
+                        </div>
+                        <div class="decoration"></div>
+                      </div>
+                      <p
+                        class="paragraph card-content lang-myakisheva-feedback-paragraph"
+                      >
+                        From start to finish, working with IK.Agency was a
+                        seamless experience. They were professional, creative,
+                        and delivered on time and within budget. We're thrilled
+                        with the final result and look forward to working with
+                        them again in the future.
+                      </p>
+                    </div>
                   </div>
-                  <p class="paragraph card-content">
-                    Working with IK.Agency has been an incredible experience.
-                    They truly listened to our needs and created effective
-                    advertising that exceeded our expectations. We couldn't be
-                    happier with the final result!
-                  </p>
                 </div>
-                <!-- <div class="feedback-card">
-                  <div class="card-header">
-                    <div class="avatar"></div>
-                    <div class="user-info">
-                      <h3 class="name">Nikita Timurov</h3>
-                      <p class="about">CEO of Bioforce Company</p>
-                    </div>
-                    <div class="decoration"></div>
-                  </div>
-                  <p class="paragraph card-content">
-                    Working with IK.Agency has been an incredible experience.
-                    They truly listened to our needs and created effective
-                    advertising that exceeded our expectations. We couldn't be
-                    happier with the final result!
-                  </p>
-                </div> -->
-                <!-- <div class="feedback-card">
-                  <div class="card-header">
-                    <div class="avatar"></div>
-                    <div class="user-info">
-                      <h3 class="name">Nikita Timurov</h3>
-                      <p class="about">CEO of Bioforce Company</p>
-                    </div>
-                    <div class="decoration"></div>
-                  </div>
-                  <p class="paragraph card-content">
-                    Working with IK.Agency has been an incredible experience.
-                    They truly listened to our needs and created effective
-                    advertising that exceeded our expectations. We couldn't be
-                    happier with the final result!
-                  </p>
-                </div> -->
               </div>
+
               <div class="controls">
                 <button class="go-left"></button>
                 <button class="go-right"></button>
               </div>
             </div>
+
+            <!-- ===================== -->
           </div>
         </section>
 
         <section class="section-values">
           <div class="section-values-header">
-            <p class="heading-primary heading-primary--black">Innovate</p>
+            <p class="heading-primary lang-innovate heading-primary--black">
+              Innovate
+            </p>
             <img
               class="section-values-star"
               src="./assets/img/star-secondary-values.svg"
               alt="star"
             />
-            <p class="heading-primary heading-primary--black">Create</p>
+            <p class="heading-primary lang-create heading-primary--black">
+              Create
+            </p>
             <img
               class="section-values-star"
               src="./assets/img/star-secondary-values.svg"
               alt="star"
             />
-            <p class="heading-primary heading-primary--black">Launch</p>
+            <p class="heading-primary lang-launch heading-primary--black">
+              Launch
+            </p>
           </div>
           <div class="section-values-decoration">
             <img src="./assets/img/star-primary-values.svg" alt="star" />
           </div>
           <div class="section-values-image-block">
             <div class="content-block">
-              <p class="title">Spent ad budget</p>
+              <p class="title lang-spent">Spent ad budget</p>
               <p class="price">$263,540</p>
-              <p class="info">19%&nbsp;for&nbsp;the&nbsp;last&nbsp;month</p>
+              <p class="info lang-info">
+                19%&nbsp;for&nbsp;the&nbsp;last&nbsp;month
+              </p>
             </div>
           </div>
           <div class="section-values-content-block">
-            <p class="paragraph section-values-paragraph">
+            <p class="paragraph section-values-paragraph lang-values-paragraph">
               Where Creativity Meets Results: Ik.Agency is the perfect blend of
               artistic creativity and strategic thinking, delivering marketing
               that resonates and performs.
@@ -471,13 +652,13 @@
               <a
                 target="_blank"
                 href="https://t.me/IK_Agency"
-                class="section-values-btn section-values-btn--active"
+                class="section-values-btn lang-hire-us section-values-btn--active"
                 >Hire Us</a
               >
               <a
                 target="_blank"
                 href="https://t.me/IK_Agency"
-                class="section-values-btn"
+                class="section-values-btn lang-consultation"
                 >Book Consultation</a
               >
             </div>
@@ -516,6 +697,7 @@
         </div>
       </footer>
     </div>
-    <script src="./js/index.js"></script>
+    <script type="module" src="./js/index.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
   </body>
 </html>

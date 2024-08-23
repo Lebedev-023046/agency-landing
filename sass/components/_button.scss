@@ -41,8 +41,9 @@
     max-width: max-content;
     color: $color-primary;
 
-    @include respond(tab-phone) {
+    @include respond(phone) {
       padding: 1.5rem 2.5rem;
+      margin-bottom: 2rem;
     }
 
     &:hover {
