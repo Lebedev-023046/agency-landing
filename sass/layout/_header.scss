@@ -44,10 +44,21 @@
   }
 
   .lang-select {
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    font-size: 1.6rem;
+
     border: none;
-    outline: none;
-    color: $color-primary;
-    background-color: inherit;
+    padding-right: 2.5rem;
+
+    background: url('./../assets/img/chevrone.svg') $color-secondary no-repeat;
+    background-position: right;
+    background-size: 50%;
+
+    &:focus {
+      outline: none;
+    }
   }
 
   &__btn {
