@@ -1405,6 +1405,7 @@ body {
 .header .lang-select {
   border: none;
   outline: none;
+  color: #222222;
   background-color: inherit;
 }
 .header__btn {
