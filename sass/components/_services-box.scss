@@ -13,9 +13,14 @@
   }
 }
 
-// .left-column {
-//   width: 30%;
-// }
+.left-column {
+  max-width: 40%;
+  width: 100%;
+
+  @include respond(tab-port) {
+    max-width: 100%;
+  }
+}
 
 .service-list {
   display: flex;
