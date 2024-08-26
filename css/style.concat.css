@@ -116,6 +116,9 @@ body {
 .paragraph--white {
   color: #fff;
 }
+.paragraph-box {
+  line-height: 120%;
+}
 @media (max-width: 37.5em) {
   .paragraph {
     font-size: 1.9rem;
@@ -758,6 +761,16 @@ body {
   .columns {
     flex-direction: column;
     row-gap: 4rem;
+  }
+}
+
+.left-column {
+  max-width: 40%;
+  width: 100%;
+}
+@media (max-width: 56.25em) {
+  .left-column {
+    max-width: 100%;
   }
 }
 
