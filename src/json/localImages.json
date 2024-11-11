@@ -1,0 +1,46 @@
+{
+	"en": {
+		"adult": {
+			"avif": "./assets/img/dist/cases/en/adult.avif",
+			"webp": "./assets/img/dist/cases/en/adult.webp",
+			"jpg": "./assets/img/dist/cases/en/adult.jpg"
+		},
+		"nutra": {
+			"avif": "./assets/img/dist/cases/en/nutra.avif",
+			"webp": "./assets/img/dist/cases/en/nutra.webp",
+			"jpg": "./assets/img/dist/cases/en/nutra.jpg"
+		},
+		"casino": {
+			"avif": "./assets/img/dist/cases/en/casino.avif",
+			"webp": "./assets/img/dist/cases/en/casino.webp",
+			"jpg": "./assets/img/dist/cases/en/casino.jpg"
+		},
+		"apps": {
+			"avif": "./assets/img/dist/cases/en/apps.avif",
+			"webp": "./assets/img/dist/cases/en/apps.webp",
+			"jpg": "./assets/img/dist/cases/en/apps.jpg"
+		}
+	},
+	"ru": {
+		"adult": {
+			"avif": "./assets/img/dist/cases/ru/adult.avif",
+			"webp": "./assets/img/dist/cases/ru/adult.webp",
+			"jpg": "./assets/img/dist/cases/ru/adult.jpg"
+		},
+		"nutra": {
+			"avif": "./assets/img/dist/cases/ru/nutra.avif",
+			"webp": "./assets/img/dist/cases/ru/nutra.webp",
+			"jpg": "./assets/img/dist/cases/ru/nutra.jpg"
+		},
+		"casino": {
+			"avif": "./assets/img/dist/cases/ru/casino.avif",
+			"webp": "./assets/img/dist/cases/ru/casino.webp",
+			"jpg": "./assets/img/dist/cases/ru/casino.jpg"
+		},
+		"apps": {
+			"avif": "./assets/img/dist/cases/ru/apps.avif",
+			"webp": "./assets/img/dist/cases/ru/apps.webp",
+			"jpg": "./assets/img/dist/cases/ru/apps.jpg"
+		}
+	}
+}

@@ -1,0 +1,231 @@
+.columns {
+	display: flex;
+	column-gap: 10rem;
+	margin-top: 2rem;
+
+	@include respond(tab-land) {
+		column-gap: 5rem;
+	}
+
+	@include respond(tab-port) {
+		flex-direction: column;
+		row-gap: 4rem;
+	}
+}
+
+.left-column {
+	max-width: 40%;
+	width: 100%;
+
+	@include respond(tab-port) {
+		max-width: 100%;
+	}
+}
+
+.service-list {
+	display: flex;
+	flex-direction: column;
+	row-gap: 3rem;
+	margin-top: 4rem;
+
+	&_item {
+		text-align: left;
+		font-size: 2.3rem;
+
+		@include respond(tab-land) {
+			font-size: 2rem;
+		}
+
+		&-counter {
+			font-family: ME-regular;
+			margin-right: 2rem;
+		}
+
+		&-arrow {
+			display: inline;
+			fill: #fff;
+		}
+	}
+}
+
+.right-column {
+	display: grid;
+	grid-template-columns: 1.5fr 1fr;
+	gap: 2rem;
+	width: 100%;
+
+	@include respond(tab-land) {
+		grid-template-columns: repeat(1, 1fr);
+	}
+
+	&_img-box {
+		border-radius: 3rem;
+	}
+
+	.huge-img-box {
+		display: grid;
+		grid-template-columns: repeat(2, 1fr);
+		gap: 1rem;
+		grid-row: 1/3;
+
+		.service-img {
+			min-height: 30rem;
+			border-radius: 3rem;
+
+			@include respond(phone) {
+				min-height: 23rem;
+			}
+
+			&:nth-child(1) {
+				position: relative;
+				z-index: 1;
+				background: url('../assets/img/dist/services/google.png') no-repeat
+					center / contain;
+				transform: rotate(-15deg) translateY(4rem);
+
+				@supports (background: url('../assets/img/dist/services/google.avif')) {
+					&:nth-child(1) {
+						background: url('../assets/img/dist/services/google.avif') no-repeat
+							center / contain;
+					}
+				}
+
+				@supports (background: url('../assets/img/dist/services/google.webp')) {
+					.background {
+						background: url('../assets/img/dist/services/google.webp') no-repeat
+							center / contain;
+					}
+				}
+			}
+			&:nth-child(2) {
+				position: relative;
+				z-index: 2;
+				background: url('../assets/img/services/tg.png') no-repeat center/
+					contain;
+				background-size: contain;
+				transform: rotate(15deg) translateY(3rem);
+
+				@supports (background: url('../assets/img/dist/services/tg.avif')) {
+					&:nth-child(2) {
+						background: url('../assets/img/dist/services/tg.avif') no-repeat
+							center / contain;
+					}
+				}
+
+				@supports (background: url('../assets/img/dist/services/tg.webp')) {
+					&:nth-child(2) {
+						background: url('../assets/img/dist/services/tg.webp') no-repeat
+							center / contain;
+					}
+				}
+			}
+			&:nth-child(3) {
+				background: url('../assets/img/dist/services/fb.png') no-repeat center/
+					contain;
+				background-size: contain;
+				transform: rotate(-5deg) translateY(-2rem);
+
+				@supports (background: url('../assets/img/dist/services/fb.avif')) {
+					&:nth-child(3) {
+						background: url('../assets/img/dist/services/fb.avif') no-repeat
+							center / contain;
+					}
+				}
+
+				@supports (background: url('../assets/img/dist/services/fb.webp')) {
+					&:nth-child(3) {
+						background: url('../assets/img/dist/services/fb.webp') no-repeat
+							center / contain;
+					}
+				}
+			}
+			&:nth-child(4) {
+				background: url('../assets/img/dist/services/3D..png') no-repeat center /
+					contain;
+				background-size: contain;
+				transform: rotate(20deg) translate(-2rem, -1rem);
+
+				@supports (background: url('../assets/img/dist/services/3D.avif')) {
+					&:nth-child(4) {
+						background: url('../assets/img/dist/services/3D.avif') no-repeat
+							center / contain;
+					}
+				}
+
+				@supports (background: url('../assets/img/dist/services/3D.webp')) {
+					&:nth-child(4) {
+						background: url('../assets/img/dist/services/3D.webp') no-repeat
+							center / contain;
+					}
+				}
+			}
+		}
+	}
+
+	.small-img-box {
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+		padding: 3rem;
+		aspect-ratio: 1/1;
+		color: $color-white;
+		font-size: $default-font-size;
+
+		background-color: $color-primary;
+
+		@include respond(tab-port) {
+			aspect-ratio: 1.4 / 1;
+		}
+
+		& > div.text-link {
+			font-size: 3rem;
+		}
+
+		&:last-child {
+			color: $color-primary;
+			background-color: $color-secondary;
+
+			& > p.paragraph {
+				color: $color-primary;
+			}
+		}
+	}
+}
+
+.bottom-text {
+	display: flex;
+	align-items: center;
+	column-gap: 2rem;
+	// text-transform: capitalize;
+	font-size: 3rem;
+}
+
+.bottom-text-button {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 6rem;
+	aspect-ratio: 1/1;
+	border-radius: 50%;
+	background-color: $color-black-shade;
+
+	&--secondary {
+		background-color: $color-white;
+	}
+}
+
+.bottom-text-link {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	display: block;
+	width: 100%;
+	height: 100%;
+}
+
+.bottom-text-img {
+	&--secondary {
+		filter: brightness(0) saturate(100%) invert(13%) sepia(0%) saturate(0%)
+			hue-rotate(37deg) brightness(103%) contrast(100%);
+	}
+}

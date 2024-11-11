@@ -1,0 +1,156 @@
+.section-process-heading-content {
+	text-align: center;
+	max-width: 80%;
+	margin: 14rem auto 8rem;
+
+	@include respond(phone) {
+		margin: 7rem auto 4rem;
+	}
+
+	.section-info {
+		width: 70%;
+
+		@include respond(phone) {
+			width: 100%;
+		}
+	}
+
+	.star-content {
+		display: flex;
+		justify-content: space-between;
+	}
+
+	.star-left,
+	.star-right {
+		@include respond(phone) {
+			display: none;
+		}
+	}
+
+	.star-left {
+		align-self: flex-start;
+	}
+
+	.star-right {
+		align-self: flex-end;
+	}
+}
+
+.process-cards {
+	display: grid;
+	gap: 1.6rem;
+	margin-inline: 11.5rem;
+	grid-template-columns: repeat(2, 1fr);
+
+	@include respond(tab-port) {
+		margin-inline: 5rem;
+		// grid-template-columns: repeat(1, 1fr);
+	}
+	@include respond(phone) {
+		margin-inline: 2rem;
+		grid-template-columns: repeat(1, 1fr);
+	}
+}
+
+.process-card {
+	background-color: $color-card;
+	padding: 4.7rem;
+	border-radius: 5rem;
+
+	@include respond(tab-port) {
+		padding: 3rem;
+	}
+
+	.number {
+		font-family: ME-regular;
+		font-size: 3rem;
+		color: $color-card-number;
+	}
+
+	.img-block {
+		width: 100%;
+		height: 30rem;
+		border-radius: 3rem;
+		margin-block: 4rem;
+	}
+
+	.discovery {
+		background: url('../assets/img/dist/processes/discovery.png') no-repeat
+			center / cover;
+
+		@supports (background: url('../assets/img/dist/processes/discovery.avif')) {
+			& {
+				background: url('../assets/img/dist/processes/discovery.avif') no-repeat
+					center / cover;
+			}
+		}
+
+		@supports (background: url('../assets/img/dist/processes/discovery.webp')) {
+			& {
+				background: url('../assets/img/dist/processes/discovery.webp') no-repeat
+					center / cover;
+			}
+		}
+	}
+
+	.strategy {
+		background: url('../assets/img/dist/processes/strategy.png') no-repeat
+			center / cover;
+
+		@supports (background: url('../assets/img/dist/processes/strategy.avif')) {
+			& {
+				background: url('../assets/img/dist/processes/strategy.avif') no-repeat
+					center / cover;
+			}
+		}
+
+		@supports (background: url('../assets/img/dist/processes/strategy.webp')) {
+			& {
+				background: url('../assets/img/dist/processes/strategy.webp') no-repeat
+					center / cover;
+			}
+		}
+	}
+
+	.testing {
+		background: url('../assets/img/dist/processes/testing.png') no-repeat center /
+			cover;
+
+		@supports (background: url('../assets/img/dist/processes/testing.avif')) {
+			& {
+				background: url('../assets/img/dist/processes/testing.avif') no-repeat
+					center / cover;
+			}
+		}
+
+		@supports (background: url('../assets/img/dist/processes/testing.webp')) {
+			& {
+				background: url('../assets/img/dist/processes/testing.webp') no-repeat
+					center / cover;
+			}
+		}
+	}
+
+	.advertisement {
+		background: url('../assets/img/dist/processes/advertisement.png') no-repeat
+			center / cover;
+
+		@supports (
+			background: url('../assets/img/dist/processes/advertisement.avif')
+		) {
+			& {
+				background: url('../assets/img/dist/processes/advertisement.avif')
+					no-repeat center / cover;
+			}
+		}
+
+		@supports (
+			background: url('../assets/img/dist/processes/advertisement.webp')
+		) {
+			& {
+				background: url('../assets/img/dist/processes/advertisement.webp')
+					no-repeat center / cover;
+			}
+		}
+	}
+}

@@ -1,0 +1,80 @@
+.text-content {
+	display: flex;
+	justify-content: space-between;
+	column-gap: 11.5rem;
+
+	@include respond(phone) {
+		flex-direction: column;
+		row-gap: 2rem;
+	}
+}
+
+.img-content {
+	display: flex;
+	justify-content: space-between;
+	column-gap: 4rem;
+	margin-top: 5rem;
+
+	@include respond(phone) {
+		flex-direction: column;
+		row-gap: 2rem;
+	}
+
+	& > div {
+		// background-color: $color-grey;
+		border-radius: 3rem;
+		background-size: cover;
+		@include respond(phone) {
+			width: 100%;
+		}
+	}
+}
+
+.img-horisontal {
+	position: relative;
+	width: 55%;
+	max-height: 50rem;
+	aspect-ratio: 1.5;
+	background: url('../assets/img/dist/potential/horisontal.png') no-repeat
+		center;
+	// background-size: contain;
+}
+
+.img-vertical {
+	width: 40%;
+	max-height: 66rem;
+	margin-top: -5rem;
+	aspect-ratio: 0.66;
+	background: url('../assets/img/dist/potential/vertical.png') no-repeat center;
+
+	@include respond(phone) {
+		flex-direction: column;
+		margin: 0;
+	}
+}
+@supports (background: url('../assets/img/dist/potential/vertical.avif')) {
+	.img-vertical {
+		background: url('../assets/img/dist/potential/vertical.avif') no-repeat
+			center;
+	}
+}
+
+@supports (background: url('../assets/img/dist/potential/vertical.webp')) {
+	.img-vertical {
+		background: url('../assets/img/dist/potential/vertical.webp') no-repeat
+			center;
+	}
+}
+@supports (background: url('../assets/img/dist/potential/horisonta.avif')) {
+	.img-horisontal {
+		background: url('../assets/img/dist/potential/horisonta.avif') no-repeat
+			center;
+	}
+}
+
+@supports (background: url('../assets/img/dist/potential/horisontal.webp')) {
+	.img-horisontal {
+		background: url('../assets/img/dist/potential/horisontal.webp') no-repeat
+			center;
+	}
+}
