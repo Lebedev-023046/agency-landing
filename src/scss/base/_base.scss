@@ -60,6 +60,8 @@ a {
 
 html {
 	font-size: 62.5%;
+	overflow-y: scroll;
+	scrollbar-gutter: stable;
 
 	@include respond(tab-land) {
 		font-size: 56.25%;
@@ -76,4 +78,8 @@ html {
 
 body {
 	box-sizing: border-box;
+
+	&.page-is-loading {
+		opacity: 0;
+	}
 }
