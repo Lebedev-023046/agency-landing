@@ -198,11 +198,7 @@ const localImageData = {
 };
 
 if (checkbox && menuItemsBlock) {
-	menuItemsBlock.addEventListener('click', (event) => {
-		if (event.target.classList.contains('navigation__link')) {
-			checkbox.checked = !checkbox.checked;
-		}
-	});
+	initBurgerMenu();
 }
 
 // SELECT
@@ -211,11 +207,32 @@ const select = document.getElementById('lang-select-id');
 const page = document.body;
 
 if (select) {
+	initLanguageSwitcher();
+}
+
+function initBurgerMenu() {
+	menuItemsBlock.addEventListener('click', (event) => {
+		if (event.target.classList.contains('navigation__link')) {
+			checkbox.checked = !checkbox.checked;
+		}
+	});
+}
+
+function initLanguageSwitcher() {
 	select.addEventListener('change', changeURLLanguage);
+	window.addEventListener('hashchange', changeLanguage);
 }
 
 function changeURLLanguage() {
+	if (!select) {
+		return;
+	}
+
 	let lang = select.value;
+	if (!allLangs.includes(lang)) {
+		return;
+	}
+
 	window.location.hash = lang;
 	changeLanguage();
 }
@@ -235,10 +252,18 @@ function changeLanguage() {
 		markPageAsReady();
 		return;
 	}
+
+	const currentLanguageHash = languageData[hash];
+	const currentLanguageImages = localImageData[hash];
+	if (!currentLanguageHash || !currentLanguageImages) {
+		console.error(`Missing localization data for language: ${hash}`);
+		markPageAsReady();
+		return;
+	}
+
 	select.value = hash;
 
 	try {
-		const currentLanguageHash = languageData[hash];
 		for (let key in currentLanguageHash) {
 			const element = document.querySelector(`.lang-${key}`);
 			if (element) {
@@ -250,7 +275,7 @@ function changeLanguage() {
 		const avifs = document.querySelectorAll('.cases__card-avif');
 		const webps = document.querySelectorAll('.cases__card-webp');
 
-		Object.entries(localImageData[hash]).forEach(
+		Object.entries(currentLanguageImages).forEach(
 			([_, imgPathValue], imageIndex) => {
 				Object.entries(imgPathValue).forEach(([_, value]) => {
 					if (avifs[imageIndex] && value.endsWith('.avif')) {
@@ -273,7 +298,6 @@ function changeLanguage() {
 }
 
 changeLanguage();
-window.addEventListener('hashchange', changeLanguage);
 
 // SWIPER
 function initSwipers() {

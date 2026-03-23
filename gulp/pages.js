@@ -1,16 +1,15 @@
-import browserSyncModule from "browser-sync";
-import { dest, src } from "gulp";
-import include from "gulp-include";
+import { dest, src } from 'gulp';
+import include from 'gulp-include';
 
-const browserSync = browserSyncModule.create();
+import { browserSync } from '../gulpfile.js';
 
 export function pages() {
-  return src("./src/pages/**/*.html")
-    .pipe(
-      include({
-        includePaths: "./src/components",
-      })
-    )
-    .pipe(dest("./src"))
-    .pipe(browserSync.stream());
+	return src('./src/pages/**/*.html')
+		.pipe(
+			include({
+				includePaths: './src/components',
+			})
+		)
+		.pipe(dest('./src'))
+		.pipe(browserSync.stream());
 }

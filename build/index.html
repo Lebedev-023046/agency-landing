@@ -23,10 +23,7 @@
 			href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
 		/>
 		<link rel="stylesheet" href="./css/style.min.css" />
-		<script
-			async
-			src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"
-		></script>
+		<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 		<title>IK.Agency</title>
 	</head>
 	<body class="page-is-loading">
@@ -41,20 +38,21 @@
 				</div>
 				<div class="navigation-container">
 					<nav class="navigation">
-						<input
-							type="checkbox"
-							class="navigation__checkbox"
-							id="navi-toggle"
-						/>
-						<label for="navi-toggle" class="navigation__button">
+						<input type="checkbox" class="navigation__checkbox" id="navi-toggle" />
+						<label
+							for="navi-toggle"
+							class="navigation__button"
+							aria-label="Open navigation menu"
+						>
 							<div class="burger"></div>
 							<div class="navigation__background"></div>
 						</label>
-
+			
 						<ul class="navigation__list">
 							<li class="navigation__item">
 								<a
 									target="_blank"
+									rel="noopener noreferrer"
 									href="https://t.me/IkkAgency"
 									class="lang-nav-home navigation__link"
 									>home</a
@@ -63,6 +61,7 @@
 							<li class="navigation__item">
 								<a
 									target="_blank"
+									rel="noopener noreferrer"
 									href="https://t.me/IkkAgency"
 									class="lang-nav-services navigation__link"
 									>services</a
@@ -71,6 +70,7 @@
 							<li class="navigation__item">
 								<a
 									target="_blank"
+									rel="noopener noreferrer"
 									href="https://teletype.in/@ik.agency"
 									class="lang-nav-portfolio navigation__link"
 									>portfolio</a
@@ -79,6 +79,7 @@
 							<li class="navigation__item">
 								<a
 									target="_blank"
+									rel="noopener noreferrer"
 									href="https://t.me/IkkAgency"
 									class="lang-nav-pricing navigation__link"
 									>pricing</a
@@ -87,6 +88,7 @@
 							<li class="navigation__item">
 								<a
 									target="_blank"
+									rel="noopener noreferrer"
 									href="https://t.me/IkkAgency"
 									class="lang-nav-about navigation__link"
 									>about</a
@@ -95,22 +97,29 @@
 						</ul>
 					</nav>
 				</div>
-
+			
 				<div class="header-btns">
 					<a
 						target="_blank"
+						rel="noopener noreferrer"
 						href="https://t.me/IkkAgency"
 						class="header__btn lang-contact-us contact-us"
 						>Contact Us</a
 					>
 					<div class="select-container">
-						<select class="lang-select" name="lang-select" id="lang-select-id">
+						<select
+							class="lang-select"
+							name="lang-select"
+							id="lang-select-id"
+							aria-label="Select language"
+						>
 							<option value="ru" selected>ru</option>
 							<option value="en">en</option>
 						</select>
 					</div>
 				</div>
 			</header>
+			
 			<main class="main">
 				<section class="hero">
 					<div class="hero__content">
@@ -294,14 +303,18 @@
 										see how <br />
 										we work
 									</p>
-									<button class="bottom-text-button">
-										<a target="_blank" href="https://t.me/IkkAgency">
-											<img
-												class="bottom-text-img"
-												src="./assets/img/dist/icons/arrow-top-right.svg"
-												alt="arrow"
-										/></a>
-									</button>
+									<a
+										class="bottom-text-button bottom-text-link"
+										target="_blank"
+										rel="noopener noreferrer"
+										href="https://t.me/IkkAgency"
+									>
+										<img
+											class="bottom-text-img"
+											src="./assets/img/dist/icons/arrow-top-right.svg"
+											alt=""
+										/>
+									</a>
 								</div>
 							</div>
 							<div
@@ -316,17 +329,18 @@
 										meet our <br />
 										experts
 									</p>
-									<button
-										class="bottom-text-button bottom-text-button--secondary"
+									<a
+										class="bottom-text-button bottom-text-button--secondary bottom-text-link"
+										target="_blank"
+										rel="noopener noreferrer"
+										href="https://t.me/IkkAgency"
 									>
-										<a target="_blank" href="https://t.me/IkkAgency">
-											<img
-												class="bottom-text-img bottom-text-img--secondary"
-												src="./assets/img/dist/icons/arrow-top-right.svg"
-												alt="arrow"
-											/>
-										</a>
-									</button>
+										<img
+											class="bottom-text-img bottom-text-img--secondary"
+											src="./assets/img/dist/icons/arrow-top-right.svg"
+											alt=""
+										/>
+									</a>
 								</div>
 							</div>
 						</div>
@@ -366,7 +380,7 @@
 
 								<img
 									src="./assets/img/dist/icons/star-primary.svg"
-									alt="star-bottom-right"
+									alt=""
 									class="star-right"
 								/>
 							</div>
@@ -455,14 +469,13 @@
 								>of Successful Projects</span
 							>
 						</h2>
-						<button class="btn btn-projects">
-							<a
-								class="lang-projects-btn"
-								target="_blank"
-								href="https://teletype.in/@ik.agency"
-								>See more &rarr;</a
-							>
-						</button>
+						<a
+							class="btn btn-projects lang-projects-btn"
+							target="_blank"
+							rel="noopener noreferrer"
+							href="https://teletype.in/@ik.agency"
+							>See more &rarr;</a
+						>
 					</div>
 
 					<div class="swiper-outer-container">
@@ -595,6 +608,7 @@
 							<a
 								class="cases-link"
 								target="_blank"
+								rel="noopener noreferrer"
 								href="https://teletype.in/@ik.agency"
 							></a>
 						</h3>
@@ -667,7 +681,7 @@
 														/>
 														<img
 															src="./assets/img/dist/feedback/dmitry.png"
-															alt="avatar"
+															alt="Dmitry Volsky"
 														/>
 													</picture>
 												</div>
@@ -701,7 +715,7 @@
 														/>
 														<img
 															src="./assets/img/dist/feedback/nikita.png"
-															alt="avatar"
+															alt="Nikita Timurov"
 														/>
 													</picture>
 												</div>
@@ -734,7 +748,7 @@
 														/>
 														<img
 															src="./assets/img/dist/feedback/ksenia.png"
-															alt="avatar"
+															alt="Ksenia Myakisheva"
 														/>
 													</picture>
 												</div>
@@ -759,8 +773,11 @@
 							</div>
 
 							<div class="controls">
-								<button class="go-left"></button>
-								<button class="go-right"></button>
+								<button
+									class="go-left"
+									aria-label="Previous testimonial"
+								></button>
+								<button class="go-right" aria-label="Next testimonial"></button>
 							</div>
 						</div>
 
@@ -776,7 +793,7 @@
 						<img
 							class="section-values-star"
 							src="./assets/img/dist/icons/star-secondary-values.svg"
-							alt="star"
+							alt=""
 						/>
 						<p class="heading-primary lang-create heading-primary--black">
 							Create
@@ -784,17 +801,14 @@
 						<img
 							class="section-values-star"
 							src="./assets/img/dist/icons/star-secondary-values.svg"
-							alt="star"
+							alt=""
 						/>
 						<p class="heading-primary lang-launch heading-primary--black">
 							Launch
 						</p>
 					</div>
 					<div class="section-values-decoration">
-						<img
-							src="./assets/img/dist/icons/star-primary-values.svg"
-							alt="star"
-						/>
+						<img src="./assets/img/dist/icons/star-primary-values.svg" alt="" />
 					</div>
 					<div class="section-values-image-block">
 						<div class="content-block">
@@ -814,12 +828,14 @@
 						<div class="section-values-btns">
 							<a
 								target="_blank"
+								rel="noopener noreferrer"
 								href="https://t.me/IkkAgency"
 								class="section-values-btn lang-hire-us section-values-btn--active"
 								>Hire Us</a
 							>
 							<a
 								target="_blank"
+								rel="noopener noreferrer"
 								href="https://t.me/IkkAgency"
 								class="section-values-btn lang-consultation"
 								>Book Consultation</a
@@ -833,44 +849,49 @@
 					<div class="top-content">
 						<img
 							src="./assets/img/dist/icons/logo.svg"
-							alt="logo"
+							alt="IK.Agency logo"
 							class="logo"
 						/>
 						<h1 class="heading-primary">IK.Agency</h1>
 					</div>
-					<h3 class="heading-tertiary bottom-content">
-						Innovate. Create. Launch
-					</h3>
+					<h3 class="heading-tertiary bottom-content">Innovate. Create. Launch</h3>
 				</div>
-
+			
 				<div class="bottom-info">
-					<p class="copyright">
-						Copyright © 2021 IK.Agency. All rights reserved.
-					</p>
+					<p class="copyright">Copyright © 2021 IK.Agency. All rights reserved.</p>
 					<div class="social-medias">
 						<a
 							target="_blank"
+							rel="noopener noreferrer"
 							href="https://t.me/IkkAgency"
 							class="sm-example"
+							aria-label="Open Telegram"
 						></a>
 						<a
 							target="_blank"
+							rel="noopener noreferrer"
 							href="https://www.instagram.com/ik__agency"
 							class="sm-example"
+							aria-label="Open Instagram"
 						></a>
 						<a
 							target="_blank"
+							rel="noopener noreferrer"
 							href="http://wa.me/375293293845"
 							class="sm-example"
+							aria-label="Open WhatsApp"
 						></a>
 						<a
 							target="_blank"
+							rel="noopener noreferrer"
 							href="https://teletype.in/@ik.agency"
 							class="sm-example"
+							aria-label="Open Teletype"
 						></a>
 					</div>
 				</div>
 			</footer>
+			
 		</div>
 
 		<script src="./js/index.min.js"></script>
